@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvagna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .swiper {
+            width: 90%;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="barside">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li class="dropdown"><a >Services</a>
+                
+            </li>
+        </ul>
+
+    </div>
+    <header  class="absolute top-0 left-0 right-0 z-50">
+        <nav class="custom-container py-4 flex justify-between items-center ">
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
+
+            </div>
+            <div class="bar md:hidden" onclick="openNav()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+
+            <div class="nav hidden md:block">
+
+                <div class="nav2">
+
+                    <ul class="flex justify-between items-center gap-20">
+                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
+                        <li><a href="#aboutus" class="hover:text-[#e7c873] font-semibold">About</a></li>
+                        <li ><a href="#" class="hover:text-[#e7c873] font-semibold">Project </a></li>
+                        <li ><a href="#" class="hover:text-[#e7c873] font-semibold">Contact </a></li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- <div class="nav-button cloud-button">
+                <button>
+                    <a href="contact.html">Cloud</a>
+                </button>
+            </div> -->
+            <div class="hidden md:block nav-button bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
+
+                <a href="#" class="font-semibold text-[#0f1e5a]   ">Enquire Now</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- main banner -->
+
+    <section>
+        <div class="main-banner">
+            <img src="./img/banner-img-1.png" class="w-full" alt="">
+        </div>
+    </section>
+
+    <!-- about us -->
+
+    <section class="bg-[#f8f0cc] relative bg-[url('./img/backgroundwaves.png')]">
+
+        <div class="absolute top-0 left-0 w-[100px] h-[100px]">
+            <img src="./img/about-section-side-img.png" alt="">
+        </div>
+
+
+        <div class="custom-container">
+            <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
+                <div class="md:w-[42%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
+                    <div class="">
+                        <img src="./img/about-section-1.png" alt="">
+                    </div>
+
+                    <div class="absolute -bottom-10 md:-right-32 md:w-[300px] w-[200px] md:h-[300px] h-[200px] bg-[#e7c873] p-1 rounded-full">
+                        <img src="./img/about-section-2.png" class="w-full h-full object-cover" alt="">
+
+                    </div>
+
+                </div>
+                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="md:text-right px-10 py-5 md:py-0">
+                        <h1 class="text-[#242365] text-4xl font-bold py-5">About Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut
+                            labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                        <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor
+                            incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi</p>
+
+                        <div class="">
+                            <button class="nav-button bg-[#e7c873] py-3 px-5 text-white">
+
+                                <a href="#" class="font-semibold text-[#0f1e5a]">More About Us</a>
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- our expeience -->
+    <section class="bg-[#fcf9f0]">
+        <div class="custom-container ">
+            <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
+
+                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="text-left px-10">
+                        <h1 class="text-[#242365] text-4xl font-bold py-5">Our Experience</h1>
+                        <p class="text-[#0f1e5a] font-semibold">With A Decade Of
+                            Experience, We're Experts At Getting It Right The First Time.</p>
+                        <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi.</p>
+
+
+                        <div class="flex justify-between items-start md:flex-nowrap flex-wrap gap-5">
+                            <div class="md:w-[22%] w-[45%] ">
+                                <div class="text-center mb-10">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
+                                        <img src="./img/exp-1.svg" class="w-[30px]" alt="">
+                                    </div>
+                                </div>
+
+
+
+                                <h1 class="text-[#242365] text-center text-4xl font-bold ">350+</h1>
+                                <p class="text-[#0f1e5a] font-semibold text-center text-sm ">Property Sold</p>
+                            </div>
+                            <div class="md:w-[22%] w-[45%] ">
+                                <div class="text-center mb-10">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
+                                        <img src="./img/exp-2.svg" class="w-[30px]" alt="">
+                                    </div>
+                                </div>
+
+
+
+                                <h1 class="text-[#242365] text-center text-4xl font-bold ">18+</h1>
+                                <p class="text-[#0f1e5a] font-semibold text-sm text-center">Years of Expertise
+                                    in Real Estate</p>
+                            </div>
+
+                            <div class="md:w-[22%] w-[45%] ">
+                                <div class="text-center mb-10">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
+                                        <img src="./img/exp-3.svg" class="w-[30px]" alt="">
+                                    </div>
+                                </div>
+
+
+
+                                <h1 class="text-[#242365] text-center text-4xl font-bold ">25+</h1>
+                                <p class="text-[#0f1e5a] font-semibold text-sm text-center">Professional Agents</p>
+                            </div>
+                            <div class="md:w-[22%] w-[45%] ">
+                                <div class="text-center mb-10">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
+                                        <img src="./img/exp-1.svg" class="w-[30px]" alt="">
+                                    </div>
+                                </div>
+
+
+
+                                <h1 class="text-[#242365] text-center text-4xl font-bold ">30+</h1>
+                                <p class="text-[#0f1e5a] font-semibold text-sm text-center">Awards</p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mt-10">
+                            <button class="nav-button bg-[#0f1e5a] py-3 px-5 text-white">
+
+                                <a href="#" class="font-semibold  text-[white]">View More</a>
+                            </button>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="md:w-[42%] w-full relative bg-red-600" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="">
+                        <img src="./img/experience-section-1.png" alt="">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Expert -->
+
+    <section class="bg-[url(./img/export.png)] bg-cover bg-center">
+        <div class="custom-container">
+            <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
+                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="text-left px-10">
+
+                        <h1 class="text-[white] text-4xl font-bold py-5">Expect something different from
+                            your next home.</h1>
+                        <p class="text-[white] py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam.</p>
+
+                        <div class="flex justify-start items-center gap-10">
+                            <div class="nav-button bg-[#e7c873] py-3 px-10 text-white">
+
+                                <a href="#" class="font-semibold text-[#0f1e5a]">Contact Us</a>
+
+                            </div>
+
+                            <div class="nav-button bg-[transparent] border-2 border-[#e7c873] py-3 px-5 text-white">
+
+                                <a href="#" class="font-semibold text-[white]">Request A Viewing</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- our projects -->
+    <section class="bg-[black] p-10">
+        <div class="bg-white new-border-add relative" data-aos="fade-up" data-aos-duration="1000">
+
+            <div class="absolute top-20 left-20 w-[60px] ">
+                <img src="./img/SARVAGNA.png" class="w-full" alt="">
+            </div>
+            <div class="custom-container">
+                <div class="text-center ">
+                    <h1 class="text-[#242365]  md:text-4xl text-2xl font-bold py-5 flex justify-center md:w-[50%] mx-auto items-start">
+
+                        <img src="./img/our-project.png" class="w-[100px]" alt="">
+                        Our Projects
+                        We're more than just a number
+                    </h1>
+
+                    <p class="w-[100%] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
+
+                </div>
+            </div>
+
+            <div class="custom-container ">
+                <div class="flex md:justify-center justify-center items-center py-12 gap-10 md:flex-nowrap flex-wrap">
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">KSM Enclave</h1>
+                            <p class="text-[#554327]">Location: Vanasthalipuram</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">DHATRY County - II</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="flex md:justify-center justify-center items-center py-12 gap-10">
+                    <button class="nav-button bg-[#211F1C] py-3 px-10 text-white rounded-full ">
+
+                        <a href="#" class="font-semibold text-2xl text-[#e7c873]">View All Projects</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- our future projects -->
+
+    <section class="bg-[#FCF9F0]">
+        <div class="custom-container">
+            <div class="text-center ">
+                <h1 class="text-[#242365]  text-2xl font-bold py-5 flex justify-center w-[100%] mx-auto items-start">
+
+                    <img src="./img/our-project.png" class="w-[40px]" alt="">
+                    Our Features
+                </h1>
+                <h6 class="md:text-4xl text-2xl  py-2">It's Not Too Late To Be a Homeowner</h6>
+
+                <p class="w-[100%] mx-auto py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="custom-container ">
+            <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap ">
+
+                <div class="md:w-[45%] w-full bg-[#843660] md:px-12 px-5 md:py-20 py-5 relative md:-right-20" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="flex justify-between items-center">
+                        <div class="Features-card-img">
+                            <img src="./img/features-icon-1.png" alt="">
+                        </div>
+
+                        <div class="text-white">
+                            <p>View Real Estate</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex justify-between items-center py-16">
+                        <div class="Features-card-img">
+                            <img src="./img/features-icon-1.png" alt="">
+                        </div>
+
+                        <div class="text-white">
+                            <p>View Real Estate</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <div class="Features-card-img">
+                            <img src="./img/features-icon-1.png" alt="">
+                        </div>
+
+                        <div class="text-white">
+                            <p>View Real Estate</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-10">
+                        <button class="nav-button bg-[#e7c873] py-3 px-10 text-white">
+                            <a href="#" class="font-semibold text-[#0f1e5a]">View More</a>
+                        </button>
+
+
+
+                    </div>
+
+                </div>
+                <div class="md:w-[52%]  ">
+                    <div class="">
+                        <img src="./img/our-future.jpg" alt="">
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- testimonial -->
+    <section class="bg-[#0F1E5A] relative py-20">
+        <div class="absolute bottom-0 right-0 ">
+            <img src="./img/Vector2.png" alt="">
+        </div>
+
+        <div class="">
+            <div class="custom-container ">
+                <div class="">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 1 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col justify-between silder-round border border-neutral-800 bg-white p-8 shadow-sm  mx-auto ">
+                                    <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
+                                        <div
+                                            class="relative inline-block text-white overflow-hidden rounded-lg border-neutral-800 w-[50px]">
+                                            <img alt="" src="./img/review-1.svg" class="w-full h-full object-cover"
+                                                style="color: transparent;">
+                                        </div>
+                                    </div>
+
+
+                                    <p
+                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left">
+                                        In 2017, Mallesh Reddy played a pivotal role in the marketing and successful
+                                        execution
+                                        of Kompally Sahasra, a premium gated comm-unity located on Dulapally Road.
+                                        Spanning
+                                        2.5 acres, this project offered 36 premium residential plots, designed to cater
+                                        to families
+                                        seeking a secure and high-quality living environment.As a managing partner at
+                                        Shivam,
+                                        Mallesh Reddy was responsible for driving the marketing strategy that positioned
+                                        the
+                                        project as a sought-after destination, helping it achieve rapid sales and client
+                                        satisfaction.
+                                    </p>
+
+
+                                    <div class="mt-6 flex items-center gap-6 mx-auto">
+
+                                        <div>
+                                            <!-- stars -->
+                                            <div class="text-violet-500 flex gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <p class="leading-relaxed tracking-wide text-black">Arvind</p>
+                                            <p class="text-xs leading-relaxed tracking-wide text-gray-400">CEO of the
+                                                company</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col justify-between  border border-neutral-800 bg-white p-8 shadow-sm  mx-auto silder-round1">
+                                    <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
+                                        <div
+                                            class="relative inline-block overflow-hidden rounded-lg border-neutral-800 w-[50px]">
+                                            <img alt="" src="./img/review-2.svg" class="w-full h-full object-cover"
+                                                style="color: transparent;">
+                                        </div>
+                                    </div>
+
+
+                                    <p
+                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left">
+                                        In 2017, Mallesh Reddy played a pivotal role in the marketing and successful
+                                        execution
+                                        of Kompally Sahasra, a premium gated comm-unity located on Dulapally Road.
+                                        Spanning
+                                        2.5 acres, this project offered 36 premium residential plots, designed to cater
+                                        to families
+                                        seeking a secure and high-quality living environment.As a managing partner at
+                                        Shivam,
+                                        Mallesh Reddy was responsible for driving the marketing strategy that positioned
+                                        the
+                                        project as a sought-after destination, helping it achieve rapid sales and client
+                                        satisfaction.
+                                    </p>
+
+
+                                    <div class="mt-6 flex items-center gap-6 mx-auto">
+
+                                        <div>
+                                            <!-- stars -->
+                                            <div class="text-violet-500 flex gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <p class="leading-relaxed tracking-wide text-black">Rahul</p>
+                                            <p class="text-xs leading-relaxed tracking-wide text-gray-400">CEO of the
+                                                company</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col justify-between silder-round border border-neutral-800 bg-white p-8 shadow-sm  mx-auto ">
+                                    <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
+                                        <div
+                                            class="relative inline-block overflow-hidden rounded-lg border-neutral-800 w-[50px]">
+                                            <img alt="" src="./img/review-1.svg" class="w-full h-full object-cover"
+                                                style="color: transparent;">
+                                        </div>
+                                    </div>
+
+
+                                    <p
+                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left">
+                                        In 2017, Mallesh Reddy played a pivotal role in the marketing and successful
+                                        execution
+                                        of Kompally Sahasra, a premium gated comm-unity located on Dulapally Road.
+                                        Spanning
+                                        2.5 acres, this project offered 36 premium residential plots, designed to cater
+                                        to families
+                                        seeking a secure and high-quality living environment.As a managing partner at
+                                        Shivam,
+                                        Mallesh Reddy was responsible for driving the marketing strategy that positioned
+                                        the
+                                        project as a sought-after destination, helping it achieve rapid sales and client
+                                        satisfaction.
+                                    </p>
+
+
+                                    <div class="mt-6 flex items-center gap-6 mx-auto">
+
+                                        <div>
+                                            <!-- stars -->
+                                            <div class="text-violet-500 flex gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <p class="leading-relaxed tracking-wide text-black">Arvind</p>
+                                            <p class="text-xs leading-relaxed tracking-wide text-gray-400">CEO of the
+                                                company</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="flex flex-col justify-between  border border-neutral-800 bg-white p-8 shadow-sm  mx-auto silder-round1">
+                                    <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
+                                        <div
+                                            class="relative inline-block overflow-hidden rounded-lg border-neutral-800 w-[50px]">
+                                            <img alt="" src="./img/review-2.svg" class="w-full h-full object-cover"
+                                                style="color: transparent;">
+                                        </div>
+                                    </div>
+
+
+                                    <p
+                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left">
+                                        In 2017, Mallesh Reddy played a pivotal role in the marketing and successful
+                                        execution
+                                        of Kompally Sahasra, a premium gated comm-unity located on Dulapally Road.
+                                        Spanning
+                                        2.5 acres, this project offered 36 premium residential plots, designed to cater
+                                        to families
+                                        seeking a secure and high-quality living environment.As a managing partner at
+                                        Shivam,
+                                        Mallesh Reddy was responsible for driving the marketing strategy that positioned
+                                        the
+                                        project as a sought-after destination, helping it achieve rapid sales and client
+                                        satisfaction.
+                                    </p>
+
+
+                                    <div class="mt-6 flex items-center gap-6 mx-auto">
+
+                                        <div>
+                                            <!-- stars -->
+                                            <div class="text-violet-500 flex gap-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
+                                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <p class="leading-relaxed tracking-wide text-black">Rahul</p>
+                                            <p class="text-xs leading-relaxed tracking-wide text-gray-400">CEO of the
+                                                company</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="absolute w-[100px] bottom-0 right-0">
+                <img src="./img/Vector2.png" alt="">
+                </div> -->
+
+
+
+    </section>
+
+
+
+
+    <!-- footer -->
+
+    <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
+        <div class="absolute top-0 right-0 w-[100px] h-[100px]">
+            <img src="./img/footer-bg-icon.svg" alt="">
+
+        </div>
+        <div
+            class=" flex justify-between  mx-auto space-y-8 lg:flex-row lg:space-y-0 md:flex-nowrap flex-wrap ">
+            <div class="md:w-[20%] w-full bg-white">
+                <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+                    <div class="flex items-center justify-center items-center w-[100%]  h-[300px]">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="md:w-[80%] w-full">
+                <div class="flex  text-sm gap-x-6 gap-y-8  sm:grid-cols-3 py-10 px-10 md:flex-nowrap flex-wrap ">
+
+                    <div class="md:w-[18%]">
+                        <h3 class="uppercase  font-bold  text-[white] py-3" >Pages</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="./index.html" class=" py-1 inline-block text-white">Home it work</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#aboutus" class=" py-1 inline-block text-white">Projects </a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">About</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">Contact</a>
+                            </li>
+    
+    
+                        </ul>
+                    </div>
+                    <div class="md:w-[18%]">
+                        <h3 class="uppercase  font-bold  text-[white] py-3">Projects</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">KSM Enclave</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">DHATRY County - II</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">MND Avenue</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">more...</a>
+                            </li>
+    
+    
+    
+    
+    
+                        </ul>
+                    </div>
+                    <div class="md:w-[18%]">
+                        <h3 class="uppercase  font-bold  text-[white] py-3">Contact</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">
+                                    <i class="fa-solid fa-phone mr-2">
+    
+                                    </i>
+                                    9000503000</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">
+                                    <i class="fa-solid fa-envelope mr-2"></i>
+    
+                                    </i>
+                                    info@sarvagnaprojects.com</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white text-[12px]">
+                                    <i class="fa-solid fa-location-dot mr-2"></i>
+    
+                                    </i>
+                                    15-21-32/46&47, 3d Floor, M Squares
+                                    Building, Balajinagar, Kukatpally, Hyderabad,
+                                    TG - 500 072.</a>
+                            </li>
+                          
+    
+    
+    
+    
+                        </ul>
+                    </div>
+                    <div class="md:w-[30%] md:ml-20">
+                        <h3 class="uppercase  font-bold  text-[white] py-3">Location</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.7571154279976!2d78.40266617684578!3d17.43190715890599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91362d96387b%3A0x5d83d95f5982edc6!2sSquare%20Building%2C%20Road%20Number%2055%2C%20Jubilee%20Hills%2C%20Hyderabad%2C%20Telangana%20500033!5e1!3m2!1sen!2sin!4v1732791855722!5m2!1sen!2sin" width="90%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </li>
+                           
+                           
+    
+    
+    
+    
+                        </ul>
+                    </div>
+    
+                </div>
+
+
+                <div class="border-t-2 border-[#e7c873]  px-10">
+                    <p class=" py-5 text-white">Copyright © 2024 Sarvagna Projects | All Rights Reserved.</p>
+
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+      
+      
+
+    </footer>
+
+    <div class="flex justify-between  bg-[#E7C873] border-t-2 border-[#E7C873]">
+        <div class="md:w-[40%]   footer-line">
+
+        </div>
+        <div class="md:w-[20%] py-2">
+
+            <li class="list-none flex justify-center">
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-twitter px-4 "></i>
+                </a>
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-linkedin-in "></i>
+                </a>
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-instagram  px-4"></i>
+                </a>
+            </li>
+           </div>
+           <div class="md:w-[40%] footer-line1">
+    
+           </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            // centeredSlides: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },            
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+<script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openNav() {
+      document.getElementsByClassName("barside")[0].classList.toggle("barside1");
+    }
+  
+   
+  </script>
+</body>
+
+</html>

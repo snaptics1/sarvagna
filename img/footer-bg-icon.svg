@@ -1,0 +1,20 @@
+<svg width="144" height="216" viewBox="0 0 144 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame" clip-path="url(#clip0_397_2400)">
+<g id="Group">
+<g id="Isolation Mode">
+<g id="Group_2">
+<path id="Vector" opacity="0.2" d="M17.7463 41.0733L58.3385 0.5L144 0.5L144 161.429L141.079 164.353L17.7463 41.0733Z" fill="white"/>
+<g id="Vector_2" style="mix-blend-mode:overlay" opacity="0.2">
+<path d="M0 0.5L144 0.5V0.913404L72.2047 72.671L0 0.5Z" fill="white"/>
+</g>
+<path id="Vector_3" opacity="0.3" d="M144 71.5671L144 215.5H143.586L71.7953 143.738L144 71.5671Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_397_2400">
+<rect width="215" height="144" fill="white" transform="matrix(0 1 -1 0 144 0.5)"/>
+</clipPath>
+</defs>
+</svg>
