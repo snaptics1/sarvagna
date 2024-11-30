@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvagna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .swiper {
+            width: 90%;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="barside">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li class="dropdown"><a >Services</a>
+                
+            </li>
+        </ul>
+
+    </div>
+    <header  class="relative top-0 left-0 right-0 z-50 bg-white">
+        <nav class="custom-container py-4 flex justify-between items-center ">
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
+
+            </div>
+            <div class="bar md:hidden" onclick="openNav()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+
+
+            <div class="nav hidden md:block">
+
+                <div class="nav2">
+
+                    <ul class="flex justify-between items-center gap-20">
+                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
+                        <li><a href="#aboutus" class="hover:text-[#e7c873] font-semibold">About</a></li>
+                        <li ><a href="#" class="hover:text-[#e7c873] font-semibold">Project </a></li>
+                        <li ><a href="#" class="hover:text-[#e7c873] font-semibold">Contact </a></li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+            <!-- <div class="nav-button cloud-button">
+                <button>
+                    <a href="contact.html">Cloud</a>
+                </button>
+            </div> -->
+            <div class="hidden md:block nav-button bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
+
+                <a href="#" class="font-semibold text-[#0f1e5a]   ">Enquire Now</a>
+
+            </div>
+        </nav>
+    </header>
+
+
+   
+
+   
+
+
+   
+
+    
+
+
+    <!-- our projects -->
+    <section class="bg-[black] p-10">
+        <div class="bg-white new-border-add relative" data-aos="fade-up" data-aos-duration="1000">
+
+            <div class="absolute top-20 left-20 w-[60px] ">
+                <img src="./img/SARVAGNA.png" class="w-full" alt="">
+            </div>
+            <div class="custom-container">
+                <div class="text-center ">
+                    <h1 class="text-[#242365]  md:text-4xl text-2xl font-bold py-5 flex justify-center md:w-[50%] mx-auto items-start">
+
+                        <img src="./img/our-project.png" class="w-[100px]" alt="">
+                        Our Projects
+                        We're more than just a number
+                    </h1>
+
+                    <p class="w-[100%] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
+
+                </div>
+            </div>
+
+            <div class="custom-container ">
+                <div class="flex md:justify-center justify-center items-center py-12 gap-10  flex-wrap">
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">KSM Enclave</h1>
+                            <p class="text-[#554327]">Location: Vanasthalipuram</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">DHATRY County - II</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div><div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                        <div class="w-full h-[300px] rounded-xl">
+                            <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
+                                alt="">
+                        </div>
+
+                        <div class="py-8 text-center">
+                            <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
+                            <p class="text-[#554327]">Location: Kompally</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="flex md:justify-center justify-center items-center py-12 gap-10">
+                    <button class="nav-button bg-[#211F1C] py-3 px-10 text-white rounded-full ">
+
+                        <a href="#" class="font-semibold text-2xl text-[#e7c873]">View All Projects</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+  
+
+
+
+
+    <!-- footer -->
+
+    <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
+        <div class="absolute top-0 right-0 w-[100px] h-[100px]">
+            <img src="./img/footer-bg-icon.svg" alt="">
+
+        </div>
+        <div
+            class=" flex justify-between  mx-auto space-y-8 lg:flex-row lg:space-y-0 md:flex-nowrap flex-wrap ">
+            <div class="md:w-[20%] w-full bg-white">
+                <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+                    <div class="flex items-center justify-center items-center w-[100%]  h-[300px]">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+
+                </a>
+            </div>
+
+            <div class="md:w-[80%] w-full">
+                <div class="flex  text-sm gap-x-6 gap-y-8  sm:grid-cols-3 py-10 px-10 md:flex-nowrap flex-wrap ">
+
+                    <div class="md:w-[18%]">
+                        <h3 class="uppercase  font-bold  text-[white] py-3" >Pages</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="./index.html" class=" py-1 inline-block text-white">Home it work</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#aboutus" class=" py-1 inline-block text-white">Projects </a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">About</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">Contact</a>
+                            </li>
+    
+    
+                        </ul>
+                    </div>
+                    <div class="md:w-[18%]">
+                        <h3 class="uppercase  font-bold  text-[white] py-3">Projects</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">KSM Enclave</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">DHATRY County - II</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">MND Avenue</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">more...</a>
+                            </li>
+    
+    
+    
+    
+    
+                        </ul>
+                    </div>
+                    <div class="md:w-[18%]">
+                        <h3 class="uppercase  font-bold  text-[white] py-3">Contact</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">
+                                    <i class="fa-solid fa-phone mr-2">
+    
+                                    </i>
+                                    9000503000</a>
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white">
+                                    <i class="fa-solid fa-envelope mr-2"></i>
+    
+                                    </i>
+                                    info@sarvagnaprojects.com</a>
+                            </li>
+    
+                            <li>
+                                <a rel="noopener noreferrer" href="#" class=" py-1 inline-block text-white text-[12px]">
+                                    <i class="fa-solid fa-location-dot mr-2"></i>
+    
+                                    </i>
+                                    15-21-32/46&47, 3d Floor, M Squares
+                                    Building, Balajinagar, Kukatpally, Hyderabad,
+                                    TG - 500 072.</a>
+                            </li>
+                          
+    
+    
+    
+    
+                        </ul>
+                    </div>
+                    <div class="md:w-[30%] md:ml-20">
+                        <h3 class="uppercase  font-bold  text-[white] py-3">Location</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3001156186006!2d78.39931437462924!3d17.493181399749876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb917b6ef56acf%3A0x9be3ed600b4bfcde!2s%E2%80%9C%20HYDERABAD%20KUKATPALLY%20CAD%20DESK%20%E2%80%9C%20%3A%20Autocad%20TRAINING%20INSTITUTES%20IN%20Kphb%20REVIT%203DS%20MAX%20Vray%20SKETCHUP%20CATIA%20SOLIDWORKS%20ANSYS!5e0!3m2!1sen!2sin!4v1732878587094!5m2!1sen!2sin" width="90%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </li>
+                           
+                           
+    
+    
+    
+    
+                        </ul>
+                    </div>
+    
+                </div>
+
+
+                <div class="border-t-2 border-[#e7c873]  px-10">
+                    <p class=" py-5 text-white">Copyright © 2024 Sarvagna Projects | All Rights Reserved.</p>
+
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+      
+      
+
+    </footer>
+
+    <div class="flex justify-between  bg-[#E7C873] border-t-2 border-[#E7C873]">
+        <div class="md:w-[40%]   footer-line">
+
+        </div>
+        <div class="md:w-[20%] py-2">
+
+            <li class="list-none flex justify-center">
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-twitter px-4 "></i>
+                </a>
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-linkedin-in "></i>
+                </a>
+                <a rel="noopener noreferrer" href=""
+                    class="  inline-block text-black">
+                    <i class="fa-brands fa-instagram  px-4"></i>
+                </a>
+            </li>
+           </div>
+           <div class="md:w-[40%] footer-line1">
+    
+           </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            // centeredSlides: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },            
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+<script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openNav() {
+      document.getElementsByClassName("barside")[0].classList.toggle("barside1");
+    }
+  
+   
+  </script>
+</body>
+
+</html>
