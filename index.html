@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -40,26 +45,36 @@
 <body>
 
     <!-- header -->
-    <div class="barside py-5">
-        <ul class="flex justify-between items-center flex-col gap-2 ">
-            <li class="shadow-xl w-full text-center"><a href="index.html" class="hover:text-[#e7c873] font-semibold  ">Home</a></li>
-            <li class="shadow-xl w-full text-center"><a href="about.html" class="hover:text-[#e7c873] font-semibold">About</a></li>
-            <li class="shadow-xl w-full text-center"><a href="projects.html" class="hover:text-[#e7c873] font-semibold">Project </a></li>
-            <li class="shadow-xl w-full text-center"><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact </a></li>
-            <!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-
-
+    <div class="barside py-5" data-aos="zoom-out-down" data-aos-duration="5000" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-once="true" >
+        <ul class="flex justify-between items-center flex-col gap-2" >
+            <li class="shadow-xl w-full text-center" >
+                <a href="index.html" class="hover:text-[#e7c873] font-semibold" >Home</a>
+            </li>
+            <li class="shadow-xl w-full text-center">
+                <a href="about.html" class="hover:text-[#e7c873] font-semibold">About</a>
+            </li>
+            <li class="shadow-xl w-full text-center">
+                <a href="projects.html" class="hover:text-[#e7c873] font-semibold">Project</a>
+            </li>
+            <li class="shadow-xl w-full text-center">
+                <a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact</a>
+            </li>
         </ul>
-
     </div>
+    
+
+
     <header  class="absolute top-0 left-0 right-0 z-50">
         <nav class="custom-container py-4 flex justify-between items-center ">
             <div class="logo">
 
                 <a href="index.html">
-                    <img src="./img/logo.png" alt="">
+                    <img src="./img/logo.png" alt="Logo" data-aos="zoom-in-down" data-aos-duration="8000" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-once="true">
                 </a>
+                
+                
+                
+                
 
             </div>
             <div class="bar md:hidden" onclick="openNav()">
@@ -90,45 +105,44 @@
                     <a href="contact.html">Cloud</a>
                 </button>
             </div> -->
-            <div class="hidden md:block nav-button bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
-
-                <a href="#" class="font-semibold text-[#0f1e5a]   ">Enquire Now</a>
-
+            <div class="hidden md:block nav-button bg-[#e7c873] hover:bg-[#0f1e5a] hover:text-[#e7c873] py-3 px-5 text-white transition duration-300 transform hover:scale-105">
+                <a href="#" class="font-semibold text-[#0f1e5a]">Enquire Now</a>
             </div>
+            
         </nav>
     </header>
 
     <!-- main banner -->
-
-    <section>
-        <div class="main-banner">
-            <img src="./img/banner-img-1.png" class="w-full" alt="">
+    <section class="w-[100%] overflow-hidden">
+        <div class="main-banner w-full overflow-hidden" data-aos="custom-zoom-in">
+            <img src="./img/banner-img-1.png" class="!w-full " alt="Banner Image">
         </div>
     </section>
+    
+    
 
     <!-- about us -->
 
-    <section class="bg-[#f8f0cc] relative bg-[url('./img/backgroundwaves.png')]">
-
-        <div class="absolute top-0 left-0 w-[100px] h-[100px]">
+    <section class="bg-[#f8f0cc] relative bg-[url('./img/w4.png')] bg-cover bg-no-repeat h-screen" data-aos="fade-up" data-aos-duration="1500">
+        <div class="absolute top-0 left-0 w-[100px] h-[100px] ">
             <img src="./img/about-section-side-img.png" alt="">
         </div>
-
-
-        <div class="custom-container">
-            <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
-                <div class="md:w-[42%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
+        
+        
+        <div class="custom-container" >
+            <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap" data-aos="zoom-in-left">
+                <div class="md:w-[42%] w-full relative " data-aos="fade-up" data-aos-duration="2000">
                     <div class="">
-                        <img src="./img/about-section-1.png" alt="">
+                        <img src="./img/about-section-1.png" alt="" data-aos="zoom-out-down" data-aos-duration="2500">
                     </div>
-
-                    <div class="absolute -bottom-10 md:-right-32 md:w-[300px] w-[200px] md:h-[300px] h-[200px] bg-[#e7c873] p-1 rounded-full">
-                        <img src="./img/about-section-2.png" class="w-full h-full object-cover" alt="">
-
+                    
+                    <div class="absolute -bottom-10 md:-right-32 md:w-[300px] w-[200px] md:h-[300px] h-[200px] bg-[#e7c873] p-1 rounded-full" data-aos="zoom-out-left" data-aos-duration="1500">
+                        <img src="./img/about-section-2.png" class="w-full h-full object-cover" alt="" data-aos="zoom-out-right" data-aos-duration="2500">
+                        
                     </div>
-
+                    
                 </div>
-                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[50%] w-full" data-aos="zoom-in-up" data-aos-duration="2500">
                     <div class="md:text-right px-10 py-5 md:py-0">
                         <h1 class="text-[#242365] text-4xl font-bold py-5">About Us</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut
@@ -140,47 +154,58 @@
                             quis nostrud exercitation ullamco laboris nisi. Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim
                             ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-                        <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor
-                            incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi</p>
-
-                        <div class="">
-                            <button class="nav-button bg-[#e7c873] py-3 px-5 text-white">
-
-                                <a href="#" class="font-semibold text-[#0f1e5a]">More About Us</a>
-                            </button>
-
-
+                            <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor
+                                incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi</p>
+                                
+                                <div class="">
+                                    <button class="nav-button bg-[#e7c873] py-3 px-5 text-white" data-aos="fade-down"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1500">
+                                    
+                                    <a href="#" class="font-semibold text-[#0f1e5a]">More About Us</a>
+                                </button>
+                                
+                                
+                            </div>
                         </div>
+                        
                     </div>
-
+                    
                 </div>
-
             </div>
-        </div>
+                <div class="absolute bottom-0 right-0 w-[100px] h-[100px]">
+                    <img src="./img/about-section-side-img.png" alt="">
+                </div>        
     </section>
 
 
     <!-- our expeience -->
-    <section class="bg-[#fcf9f0]">
+    <section class="bg-[#fcf9f0] relative bg-[url('./img/circles1.png')] " data-aos="fade-up" data-aos-duration="1500">
         <div class="custom-container ">
             <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
 
-                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[50%] w-full">
                     <div class="text-left px-10">
-                        <h1 class="text-[#242365] text-4xl font-bold py-5">Our Experience</h1>
-                        <p class="text-[#0f1e5a] font-semibold">With A Decade Of
+                        <h1 class="text-[#242365] text-4xl font-bold py-5" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-out-sine">Our Experience</h1>
+                        <p class="text-[#0f1e5a] font-semibold" data-aos="fade-right"
+                        data-aos-offset="400"
+                        data-aos-easing="ease-out-sine">With A Decade Of
                             Experience, We're Experts At Getting It Right The First Time.</p>
-                        <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        <p class="py-10" data-aos="fade-right"
+                        data-aos-offset="500"
+                        data-aos-easing="ease-out-sine" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
                             exercitation ullamco laboris nisi.</p>
 
 
                         <div class="flex justify-between items-start md:flex-nowrap flex-wrap gap-5">
-                            <div class="md:w-[22%] w-[45%] ">
-                                <div class="text-center mb-10">
-                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
-                                        <img src="./img/exp-1.svg" class="w-[30px]" alt="">
+                            <div class="md:w-[22%] w-[45%] " >
+                                <div class="text-center mb-10" >
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full" data-aos="zoom-in-up">
+                                        <img src="./img/exp-1.svg" class="w-[30px]" alt="" data-aos="zoom-in">
                                     </div>
                                 </div>
 
@@ -191,8 +216,8 @@
                             </div>
                             <div class="md:w-[22%] w-[45%] ">
                                 <div class="text-center mb-10">
-                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
-                                        <img src="./img/exp-2.svg" class="w-[30px]" alt="">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full" data-aos="zoom-in-up">
+                                        <img src="./img/exp-2.svg" class="w-[30px]" alt="" data-aos="zoom-in">
                                     </div>
                                 </div>
 
@@ -205,8 +230,8 @@
 
                             <div class="md:w-[22%] w-[45%] ">
                                 <div class="text-center mb-10">
-                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
-                                        <img src="./img/exp-3.svg" class="w-[30px]" alt="">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full" data-aos="zoom-in-up">
+                                        <img src="./img/exp-3.svg" class="w-[30px]" alt="" data-aos="zoom-in">
                                     </div>
                                 </div>
 
@@ -217,8 +242,8 @@
                             </div>
                             <div class="md:w-[22%] w-[45%] ">
                                 <div class="text-center mb-10">
-                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full">
-                                        <img src="./img/exp-1.svg" class="w-[30px]" alt="">
+                                    <div class="exp-svg bg-[#0f1e5a] inline-block text-white  p-5 rounded-full" data-aos="zoom-in-up">
+                                        <img src="./img/exp-1.svg" class="w-[30px]" alt="" data-aos="zoom-in">
                                     </div>
                                 </div>
 
@@ -232,7 +257,7 @@
                         </div>
 
                         <div class="mt-10">
-                            <button class="nav-button bg-[#0f1e5a] py-3 px-5 text-white">
+                            <button class="nav-button bg-[#0f1e5a] py-3 px-5 text-white" data-aos="zoom-in">
 
                                 <a href="#" class="font-semibold  text-[white]">View More</a>
                             </button>
@@ -244,10 +269,13 @@
                 </div>
                 <div class="md:w-[42%] w-full relative bg-red-600" data-aos="fade-up" data-aos-duration="1000">
                     <div class="">
-                        <img src="./img/experience-section-1.png" alt="">
+                        <img src="./img/experience-section-1.png" alt="" data-aos="fade-up"
+                        data-aos-duration="3000">
                     </div>
-                    <div class="absolute -top-8 md:-right-8 md:w-[350px] w-[200px] md:h-[450px] h-[200px]  -z-10 p-1 rounded-full">
-                        <img src="./img/project-overview-img-1.png" class="w-full h-full object-cover" alt="">
+                    <div class="absolute -top-8 md:-right-8 md:w-[450px] w-[200px] md:h-[550px] h-[200px]  -z-10 p-1 rounded-full">
+                        <img src="./img/project-overview-img-1.png" class="w-full h-full object-cover" alt="" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
 
                     </div>
 
@@ -261,11 +289,13 @@
 
     <!-- Expert -->
 
-    <section class="bg-[url(./img/export.png)] bg-cover bg-center">
+    <section class="bg-[url(./img/export.png)] bg-cover bg-center" data-aos="zoom-in-left" data-aos-duration="1000">
         <div class="custom-container">
             <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
-                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="text-left px-10">
+                <div class="md:w-[50%] w-full" >
+                    <div class="text-left px-10" data-aos="fade-right"
+                    data-aos-offset="500"
+                    data-aos-easing="ease-in-sine" >
 
                         <h1 class="text-[white] text-4xl font-bold py-5">Expect something different from
                             your next home.</h1>
@@ -273,7 +303,9 @@
                             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam.</p>
 
-                        <div class="flex justify-start items-center gap-10">
+                        <div class="flex justify-start items-center gap-10" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <div class="nav-button bg-[#e7c873] py-3 px-10 text-white">
 
                                 <a href="#" class="font-semibold text-[#0f1e5a]">Contact Us</a>
@@ -294,62 +326,69 @@
 
 
     <!-- our projects -->
-    <section class="bg-[black] p-10">
-        <div class="bg-white new-border-add relative" data-aos="fade-up" data-aos-duration="1000">
+    <section class="bg-[black] p-10" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" >
+        <div class="bg-white new-border-add relative " data-aos="fade-down" data-aos-duration="1000">
 
-            <div class="absolute top-20 left-20 w-[60px] ">
-                <img src="./img/SARVAGNA.png" class="w-full" alt="">
+            <div class="absolute top-20 left-20 w-[60px]">
+                <img src="./img/SARVAGNA.png" class="w-full" alt="" >
             </div>
             <div class="custom-container">
                 <div class="text-center ">
-                    <h1 class="text-[#242365]  md:text-4xl text-2xl font-bold py-5 flex justify-center md:w-[50%] mx-auto items-start">
-
-                        <img src="./img/our-project.png" class="w-[100px]" alt="">
+                   
+                    <h1 class="text-[#242365] md:text-4xl text-2xl font-bold py-5 flex justify-center md:w-[60%] mx-auto items-start pt-24" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <img src="./img/our-project.png" class="w-[60px]" alt="">
                         Our Projects
-                        We're more than just a number
+                        We're More Than Just A Number
                     </h1>
-
-                    <p class="w-[100%] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    
+                    <p class="w-[100%] mx-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
 
                 </div>
             </div>
 
-            <div class="custom-container ">
+            <div class="custom-container " >
                 <div class="flex md:justify-center justify-center items-center py-12 gap-10 md:flex-nowrap flex-wrap">
-                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
-                        <div class="w-full h-[300px] rounded-xl">
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="1200" >
+                        <div class="w-full h-[300px] rounded-xl" >
                             <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
-                                alt="">
+                                alt="" >
                         </div>
 
-                        <div class="py-8 text-center">
+                        <div class="py-8 text-center" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" >
                             <h1 class="text-[#554327] text-2xl font-bold py-2">KSM Enclave</h1>
                             <p class="text-[#554327]">Location: Vanasthalipuram</p>
                         </div>
 
 
                     </div>
-                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
-                        <div class="w-full h-[300px] rounded-xl">
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="2000"  >
+                        <div class="w-full h-[300px] rounded-xl" >
                             <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
                                 alt="">
                         </div>
 
-                        <div class="py-8 text-center">
+                        <div class="py-8 text-center" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                             <h1 class="text-[#554327] text-2xl font-bold py-2">DHATRY County - II</h1>
                             <p class="text-[#554327]">Location: Kompally</p>
                         </div>
 
 
                     </div>
-                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]">
+                    <div class="md:w-[25%] w-[90%] our-project-card bg-[#E7C873]" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="3000" >
                         <div class="w-full h-[300px] rounded-xl">
                             <img src="./img/our-project-img1.png" class="w-full h-full object-cover rounded-t-xl"
                                 alt="">
                         </div>
 
-                        <div class="py-8 text-center">
+                        <div class="py-8 text-center" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom">
                             <h1 class="text-[#554327] text-2xl font-bold py-2">MND Avenue</h1>
                             <p class="text-[#554327]">Location: Kompally</p>
                         </div>
@@ -358,11 +397,14 @@
                     </div>
                 </div>
 
-                <div class="flex md:justify-center justify-center items-center py-12 gap-10">
-                    <button class="nav-button bg-[#211F1C] py-3 px-10 text-white rounded-full ">
-
+                <div class="flex md:justify-center justify-center items-center py-16 gap-10 mb-10" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <button class="nav-button bg-[#211F1C] py-4 px-6 text-white rounded-full pb-4">
                         <a href="#" class="font-semibold text-2xl text-[#e7c873]">View All Projects</a>
+                    </button>
                 </div>
+                
+                
 
             </div>
         </div>
@@ -373,65 +415,71 @@
 
     <!-- our future projects -->
 
-    <section class="bg-[#FCF9F0]">
-        <div class="custom-container">
-            <div class="text-center ">
-                <h1 class="text-[#242365]  text-2xl font-bold py-5 flex justify-center w-[100%] mx-auto items-start">
-
-                    <img src="./img/our-project.png" class="w-[40px]" alt="">
+    <section class="bg-[#FCF9F0] py-16" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="custom-container relative">
+            
+            <!-- Circle Container -->
+            <div class="circle-container hidden md:block absolute w-[400px] h-[400px] left-[90%] top-[120%] transform -translate-x-1/2 -translate-y-2/4">
+                <div class="circle bg-[#E7C873] w-full h-full rounded-full opacity-70 animate-spin-slow"></div>
+            </div>
+    
+            <!-- Text Content with AOS -->
+            <div class="text-center">
+                <h1 class="text-[#242365] md:text-4xl text-2xl font-bold flex justify-center items-center mx-auto pt-8" data-aos="fade-up" data-aos-delay="1000">
+                    <img src="./img/our-project.png" class="w-[40px] mr-4 align-middle" alt="">
                     Our Features
                 </h1>
-                <h6 class="md:text-4xl text-2xl  py-2">It's Not Too Late To Be a Homeowner</h6>
-
-                <p class="w-[100%] mx-auto py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam.</p>
-
+                <h6 class="md:text-2xl text-xl mt-4" data-aos="fade-up" data-aos-delay="900">
+                    It's Not Too Late To Be a Homeowner
+                </h6>
+                <p class="w-full md:w-[70%] mx-auto py-4" data-aos="fade-up" data-aos-delay="1000">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
             </div>
         </div>
 
 
 
-
         <div class="custom-container ">
-            <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap ">
+            <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap " data-aos-delay="1200" >
 
-                <div class="md:w-[45%] w-full bg-[#843660] md:px-12 px-5 md:py-20 py-5 relative md:-right-20" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[45%] w-full bg-[#843660] md:px-12 px-5 md:py-20 py-5 relative md:-right-20" data-aos="fade-right" data-aos-delay="1200">
                     <div class="flex justify-between items-center">
                         <div class="Features-card-img">
-                            <img src="./img/features-icon-1.png" alt="">
+                            <img src="./img/features-icon-1.png" alt="" data-aos="fade-right" data-aos-delay="1200" >
                         </div>
 
-                        <div class="text-white">
+                        <div class="text-white" data-aos="fade-up-right" data-aos-delay="1200">
                             <p>View Real Estate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
 
 
-                    <div class="flex justify-between items-center py-16">
+                    <div class="flex justify-between items-center py-16" >
                         <div class="Features-card-img">
-                            <img src="./img/features-icon-1.png" alt="">
+                            <img src="./img/features-icon-1.png" alt="" data-aos="fade-right" data-aos-delay="1200">
                         </div>
 
-                        <div class="text-white">
+                        <div class="text-white" data-aos="fade-up-right" data-aos-delay="1200">
                             <p>View Real Estate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
 
                     <div class="flex justify-between items-center">
-                        <div class="Features-card-img">
-                            <img src="./img/features-icon-1.png" alt="">
+                        <div class="Features-card-img" >
+                            <img src="./img/features-icon-1.png" alt="" data-aos="fade-right" data-aos-delay="1200">
                         </div>
 
-                        <div class="text-white">
+                        <div class="text-white" data-aos="fade-up-right" data-aos-delay="1200">
                             <p>View Real Estate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
 
                     <div class="pt-10">
-                        <button class="nav-button bg-[#e7c873] py-3 px-10 text-white">
+                        <button class="nav-button bg-[#e7c873] py-3 px-10 text-white" data-aos="fade-up-right" data-aos-delay="1200">
                             <a href="#" class="font-semibold text-[#0f1e5a]">View More</a>
                         </button>
 
@@ -440,9 +488,9 @@
                     </div>
 
                 </div>
-                <div class="md:w-[52%]  ">
+                <div class="md:w-[52%] py-10 " >
                     <div class="">
-                        <img src="./img/our-future.jpg" alt="">
+                        <img src="./img/our-future.jpg" alt=""data-aos="fade-left" data-aos-delay="1200">
                     </div>
 
 
@@ -463,10 +511,9 @@
 
         <div class="">
             <div class="custom-container ">
-                <div class="">
-
+                    <h2 class="text-[#ffffff] md:text-4xl text-2xl font-bold flex justify-center md:w-[60%] mx-auto items-center mb-20" data-aos="fade-up"data-aos-delay="500">Testimonials</h2>
                     <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper" data-aos="fade-up"data-aos-delay="500">
                             <!-- 1 -->
                             <div class="swiper-slide">
                                 <div
@@ -475,13 +522,13 @@
                                         <div
                                             class="relative inline-block text-white overflow-hidden rounded-lg border-neutral-800 w-[50px]">
                                             <img alt="" src="./img/review-1.svg" class="w-full h-full object-cover"
-                                                style="color: transparent;">
+                                                style="color: transparent; " data-aos="fade-up"data-aos-delay="500" >
                                         </div>
                                     </div>
 
 
                                     <p
-                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left">
+                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left" data-aos="fade-up"data-aos-delay="500">
                                         In 2017, Mallesh Reddy played a pivotal role in the marketing and successful
                                         execution
                                         of Kompally Sahasra, a premium gated comm-unity located on Dulapally Road.
@@ -559,20 +606,20 @@
                             </div>
 
                             <!-- 2 -->
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-up"data-aos-delay="500">
                                 <div
                                     class="flex flex-col justify-between  border border-neutral-800 bg-white p-8 shadow-sm  mx-auto silder-round1">
                                     <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
                                         <div
                                             class="relative inline-block overflow-hidden rounded-lg border-neutral-800 w-[50px]">
                                             <img alt="" src="./img/review-2.svg" class="w-full h-full object-cover"
-                                                style="color: transparent;">
+                                                style="color: transparent;" data-aos="fade-up"data-aos-delay="500">
                                         </div>
                                     </div>
 
 
                                     <p
-                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left">
+                                        class="my-2 text-sm mb-0 text-base font-normal leading-relaxed tracking-wide text-black text-left" data-aos="fade-up"data-aos-delay="500">
                                         In 2017, Mallesh Reddy played a pivotal role in the marketing and successful
                                         execution
                                         of Kompally Sahasra, a premium gated comm-unity located on Dulapally Road.
@@ -588,7 +635,7 @@
                                     </p>
 
 
-                                    <div class="mt-6 flex items-center gap-6 mx-auto">
+                                    <div class="mt-6 flex items-center gap-6 mx-auto" >
 
                                         <div>
                                             <!-- stars -->
@@ -649,12 +696,12 @@
                                 </div>
                             </div>
                             <!-- 1 -->
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" data-aos="fade-right">
                                 <div
-                                    class="flex flex-col justify-between silder-round border border-neutral-800 bg-white p-8 shadow-sm  mx-auto ">
-                                    <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
+                                    class="flex flex-col justify-between silder-round border border-neutral-800 bg-white p-8 shadow-sm  mx-auto" data-aos="fade-right">
+                                    <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800" data-aos="fade-right">
                                         <div
-                                            class="relative inline-block overflow-hidden rounded-lg border-neutral-800 w-[50px]">
+                                            class="relative inline-block overflow-hidden rounded-lg border-neutral-800 w-[50px]" data-aos="fade-right">
                                             <img alt="" src="./img/review-1.svg" class="w-full h-full object-cover"
                                                 style="color: transparent;">
                                         </div>
@@ -740,7 +787,7 @@
                             </div>
 
                             <!-- 2 -->
-                            <div class="swiper-slide">
+                            <div class="swiper-slide" >
                                 <div
                                     class="flex flex-col justify-between  border border-neutral-800 bg-white p-8 shadow-sm  mx-auto silder-round1">
                                     <div class="  overflow-hidden rounded-full shadow-sm outline-neutral-800">
@@ -769,11 +816,11 @@
                                     </p>
 
 
-                                    <div class="mt-6 flex items-center gap-6 mx-auto">
+                                    <div class="mt-6 flex items-center gap-6 mx-auto" >
 
                                         <div>
                                             <!-- stars -->
-                                            <div class="text-violet-500 flex gap-2">
+                                            <div class="text-violet-500 flex gap-2" >
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="text-violet-500"
                                                     width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
                                                     stroke="currentColor" fill="none" stroke-linecap="round"
@@ -826,15 +873,21 @@
                                         </div>
                                     </div>
 
-
                                 </div>
                             </div>
+                            
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
-
-
+                    <div class= "rounded-full bg-[#ffffff] p-4 w-12 h-12 absolute top-1/2 right-40 transform -translate-y-1/2 flex items-center justify-center" >
+                        <!-- FontAwesome Icon -->
+                        <i class="fa fa-arrow-right text-[#0F1E5A] text-[14px]" ></i>
+                    </div>
+                    
+                    <div class="rounded-full bg-[#ffffff] p-4 w-12 h-12 absolute top-1/2 left-40 transform -translate-y-1/2 flex items-center justify-center">
+                        <!-- FontAwesome Icon -->
+                        <i class="fa fa-arrow-left text-[#0F1E5A] text-[14px]"></i>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -854,25 +907,24 @@
 
     <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
         <div class="absolute top-0 right-0 w-[100px] h-[100px]">
-            <img src="./img/footer-bg-icon.svg" alt="">
+            <img src="./img/footer-bg-icon.svg" alt="" data-aos="fade-up-right">
 
         </div>
-        <div
-            class=" flex justify-between  mx-auto space-y-8 lg:flex-row lg:space-y-0 md:flex-nowrap flex-wrap ">
-            <div class="md:w-[20%] w-full bg-white">
+    
+        <div class="flex justify-between mx-auto space-y-8 lg:flex-row lg:space-y-0 md:flex-nowrap flex-wrap">
+            <div class="md:w-[20%] w-full bg-white" data-aos="fade-left">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
-                    <div class="flex items-center justify-center items-center w-[100%]  h-[300px]">
+                    <div class="flex items-center justify-center items-center w-[100%] h-[300px]">
                         <img src="./img/logo.png" alt="">
                     </div>
-
                 </a>
             </div>
 
-            <div class="md:w-[80%] w-full">
-                <div class="flex  text-sm gap-x-6 gap-y-8  sm:grid-cols-3 py-10 px-10 md:flex-nowrap flex-wrap ">
+            <div class="md:w-[80%] w-full" data-aos="fade-right">
+                <div class="flex text-sm gap-x-6 gap-y-8 sm:grid-cols-3 py-10 px-10 md:flex-nowrap flex-wrap">
 
-                    <div class="md:w-[18%]">
-                        <h3 class="uppercase  font-bold  text-[white] py-3" >Pages</h3>
+                     <div class="md:w-[18%]" data-aos="fade-right">
+                    <h3 class="uppercase font-bold text-[white] py-3">Pages</h3>
                         <ul class="space-y-1">
                             <li>
                                 <a rel="noopener noreferrer" href="./index.html" class=" py-1 inline-block text-white">Home it work</a>
@@ -891,7 +943,7 @@
     
                         </ul>
                     </div>
-                    <div class="md:w-[18%]">
+                    <div class="md:w-[18%]" data-aos="fade-right">
                         <h3 class="uppercase  font-bold  text-[white] py-3">Projects</h3>
                         <ul class="space-y-1">
                             <li>
@@ -915,7 +967,7 @@
     
                         </ul>
                     </div>
-                    <div class="md:w-[18%]">
+                    <div class="md:w-[18%]" data-aos="fade-right">
                         <h3 class="uppercase  font-bold  text-[white] py-3">Contact</h3>
                         <ul class="space-y-1">
                             <li>
@@ -949,7 +1001,7 @@
     
                         </ul>
                     </div>
-                    <div class="md:w-[30%] md:ml-20">
+                    <div class="md:w-[30%] md:ml-20" data-aos="fade-right">
                         <h3 class="uppercase  font-bold  text-[white] py-3">Location</h3>
                         <ul class="space-y-1">
                             <li>
@@ -980,37 +1032,42 @@
       
       
 
-    </footer>
-
-    <div class="flex justify-between  bg-[#E7C873] border-t-2 border-[#E7C873]">
-        <div class="md:w-[40%]   footer-line">
-
-        </div>
-        <div class="md:w-[20%] py-2">
-
-            <li class="list-none flex justify-center">
-                <a rel="noopener noreferrer" href=""
-                    class="  inline-block text-black">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a rel="noopener noreferrer" href=""
-                    class="  inline-block text-black">
-                    <i class="fa-brands fa-twitter px-4 "></i>
-                </a>
-                <a rel="noopener noreferrer" href=""
-                    class="  inline-block text-black">
-                    <i class="fa-brands fa-linkedin-in "></i>
-                </a>
-                <a rel="noopener noreferrer" href=""
-                    class="  inline-block text-black">
-                    <i class="fa-brands fa-instagram  px-4"></i>
+        
+        <div class="flex justify-between bg-[#E7C873] border-t-2 border-[#E7C873]"  >
+            <!-- Left Section -->
+            <div class="md:w-[40%] footer-line " ></div>
+            
+            <!-- Social Icons Section -->
+            <div class="md:w-[20%] py-2">
+                <ul class="list-none flex justify-center">
+                    <li>
+                        <a rel="noopener noreferrer" href="#" class="inline-block text-black">
+                    <i class="fa-brands fa-facebook-f" ></i>
                 </a>
             </li>
-           </div>
-           <div class="md:w-[40%] footer-line1">
-    
-           </div>
+            <li>
+                <a rel="noopener noreferrer" href="#" class="inline-block text-black">
+                    <i class="fa-brands fa-twitter px-4"></i>
+                </a>
+            </li>
+            <li>
+                <a rel="noopener noreferrer" href="#" class="inline-block text-black">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a rel="noopener noreferrer" href="#" class="inline-block text-black">
+                    <i class="fa-brands fa-instagram px-4"></i>
+                </a>
+            </li>
+        </ul>
     </div>
+    
+    <!-- Right Section -->
+    <div class="md:w-[40%] footer-line1" ></div>
+</div>
+</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Initialize Swiper -->
@@ -1046,16 +1103,16 @@
     </script>
 
 <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openNav() {
-      document.getElementsByClassName("barside")[0].classList.toggle("barside1");
-    }
-  
-   
-  </script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        easing: 'ease-in-out', // Easing effect
+        once: true, // Animation happens once when scrolled into view
+    });
+</script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 
 </html>
