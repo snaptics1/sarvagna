@@ -178,10 +178,14 @@
   }
 
   /* banner */
+  .row{
+    width: 100% !important;
+  }
   .box1 {
 
     height: 600px !important;
         position: relative;
+        overflow: hidden;
         /* height: 80vh; */
     
     }
