@@ -40,19 +40,31 @@
 <body>
 
     <!-- header -->
-    <div class="barside">
-        <ul class="flex justify-between items-center flex-col gap-2 ">
-            <li class="shadow-xl w-full text-center"><a href="index.html" class="hover:text-[#e7c873] font-semibold  ">Home</a></li>
-            <li class="shadow-xl w-full text-center"><a href="about.html" class="hover:text-[#e7c873] font-semibold">About</a></li>
-            <li class="shadow-xl w-full text-center"><a href="projects.html" class="hover:text-[#e7c873] font-semibold">Project </a></li>
-            <li class="shadow-xl w-full text-center"><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact </a></li>
-            <!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-
-
-        </ul>
-
-    </div>
+    <div class="barside py-5" data-aos="zoom-out-down" data-aos-duration="5000" data-aos-easing="ease-in-out"
+    data-aos-delay="500" data-aos-once="true">
+    <ul class="flex justify-between items-center flex-col gap-2">
+        <li class="shadow-xl w-full ">
+            <a href="index.html" class="hover:text-[#e7c873] font-semibold">
+                <i class="fa-solid fa-angle-right"></i>
+                Home</a>
+        </li>
+        <li class="shadow-xl w-full ">
+            <a href="about.html" class="hover:text-[#e7c873] font-semibold">
+                <i class="fa-solid fa-angle-right"></i>
+                About</a>
+        </li>
+        <li class="shadow-xl w-full ">
+            <a href="projects.html" class="hover:text-[#e7c873] font-semibold">
+                <i class="fa-solid fa-angle-right"></i>
+                Project</a>
+        </li>
+        <li class="shadow-xl w-full ">
+            <a href="contact.html" class="hover:text-[#e7c873] font-semibold">
+                <i class="fa-solid fa-angle-right"></i>
+                Contact</a>
+        </li>
+    </ul>
+</div>
     <header class="absolute top-0 left-0 right-0 z-50">
         <nav class="custom-container py-4 flex justify-between items-center ">
             <div class="logo">
@@ -125,6 +137,60 @@
     <!-- about us -->
 
     <section class="bg-[#f8f0cc] relative  bg-[url('./img/Animation.png')] bg-no-repeat">
+        <div class="w-[70%] mx-auto relative -top-10 search-box p-8 flex justify-center items-end gap-3 flex-wrap">
+            <div class="md:w-[23%] w-[100%]">
+                <p class="pb-5 text-white text-xl">Location</p>
+
+                <select name="" id="" class="w-full p-3 select-box">
+                    <option value="1">Kompally</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    </select>
+
+            </div>
+            <div class="md:w-[23%] w-[100%]">
+                <p class="pb-5 text-white text-xl">Properties</p>
+
+                <select name="" id="" class="w-full p-3 select-box">
+                    <option value="1">Plot</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    </select>
+
+            </div>
+            <div class="md:w-[23%] w-[100%]">
+                <p class="pb-5 text-white text-xl">Price Range</p>
+
+                <select name="" id="" class="w-full p-3 select-box">
+                    <option value="1">$10000</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    </select>
+
+            </div>
+            <div class="md:w-[23%] w-[100%] py-5 md:py-0">
+            <div
+            class=" select-box  md:block  bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
+
+            <a href="#" class="font-semibold text-[#0f1e5a]   ">Search</a>
+
+        </div>
+        </div>
+            
+        </div>
+       
 
         <div class="absolute top-0 left-0 w-[100px] h-[100px]">
             <img src="./img/about-section-side-img.png" alt="">
@@ -132,7 +198,7 @@
 
 
         <div class="custom-container">
-            <div class="flex justify-center items-center py-20 md:flex-nowrap flex-wrap gap-12">
+            <div class="flex justify-center items-center py-10 md:flex-nowrap flex-wrap gap-12">
                 <div class="md:w-[40%] w-full relative" data-aos="fade-up" data-aos-duration="1000">
                     <div
                         class="absolute -top-10 md:-left-12 md:w-[100px] w-[100px] md:h-[100px] h-[200px]  p-1 rounded-full -z-10">
@@ -146,7 +212,7 @@
 
 
                 </div>
-                <div class="md:w-[40%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[40%] w-full bg-[url('./img/backgroundwaves.png')] bg-no-repeat bg-center bg-cover" data-aos="fade-up" data-aos-duration="1000">
                     <div class="md:text-left px-10 py-5 md:py-0">
                         <h6 class="text-[#242365] font-semibold">About US</h6>
                         <h1 class="text-[#242365] text-3xl font-semibold py-5">We Help You Find the Property of Your Dreams</h1>
@@ -195,9 +261,15 @@
 
 
     <!-- our expeience -->
-    <section class="bg-[#fcf9f0]">
-        <div class="custom-container ">
-            <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
+    <section class="bg-[#fcf9f0] overflow-hidden">
+        <div class="custom-container relative">
+            <div class="absolute top-0 left-[400px] ">
+                <img src="./img/Bluebig_circular_lines.png" alt="">
+                </div>
+                <div class="absolute bottom-0 -right-40 ">
+                    <img src="./img/Bluebig_circular_lines.png" alt="">
+                    </div>
+            <div class="flex justify-between items-center py-20 md:flex-nowrap flex-wrap">
                 <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
                     <div class="md:text-justify px-10 py-5 md:py-0">
                         <h6 class="text-xl">Managing Director</h6>
@@ -217,10 +289,18 @@
                     </div>
 
                 </div>
-                <div class="md:w-[42%] w-full relative bg-red-600" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[42%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
                     <div class="">
-                        <img src="./img/experience-section-1.png" alt="">
+                        <img src="./img/experience-section-1.png" alt="" data-aos="fade-up" data-aos-duration="3000">
                     </div>
+                    <div
+                        class="absolute -top-8 md:-right-8 md:w-[450px] w-[200px] md:h-[550px] h-[200px]  -z-10 p-1 rounded-full">
+                        <img src="./img/project-overview-img-1.png" class="w-full h-full object-cover" alt=""
+                            data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+                    </div>
+
+
                 </div>
                 
                 

@@ -176,3 +176,121 @@
       transform: translate(-50%, -50%) scale(1.2);
     }
   }
+
+  /* banner */
+  .box1 {
+
+    height: 600px !important;
+        position: relative;
+        /* height: 80vh; */
+    
+    }
+    
+    .box1 img {
+        width: 100% !important; 
+        height: 100%;
+        object-fit: cover;
+    
+    }
+    
+    .box1  .h1 h1 {
+    
+        font-family: 'Monschon', sans-serif;
+        line-height: 1.3em;
+        font-weight: 500;
+        color: white;
+    
+        margin: 0px 0px 20px 0px;
+        font-size: 50px;
+        font-weight: 900;
+    
+        z-index: 99;
+    }
+    @media(max-width:1200px){
+      .box1  .h1 h1 {
+        font-size: 45px;
+        font-family: 'Monschon', sans-serif;
+      }
+    }
+    
+    @media(max-width:990px){
+      .box1 {
+        height: 300px !important;
+      }
+      .box1  .h1 h1 {
+        font-size: 30px;
+      }
+    }
+    .h1 {
+        top: 39%;
+        left: 5dvh;
+        position: absolute;
+        
+    }
+    @media(max-width:768px){
+      .h1 {
+        display: none;
+      }
+    }
+    .about-h1{
+        left: 11%;
+        position: absolute;
+        top: 22%;
+    }
+    .footer-icon i{
+      padding-right:10px ;
+    }
+    .h1 h1{
+        color: black;
+    }
+    
+    .h1 p {
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-size: 18px;
+       
+    }
+    .about-h1 h1{
+        color: white;
+        font-family: 'Monschon', sans-serif;
+        line-height: 1.8em;
+        font-weight: 500;
+    
+    
+        margin: 0px 0px 0px 0px;
+        font-size: 50px;
+    
+        z-index: 99;  
+    }
+    .slick-prev, .slick-next {
+      /* Background color of arrows */
+     color: #fff;              /* Icon color */
+     border-radius: 50%;       /* Make the arrow circular */
+     width: 40px;
+     height: 40px;
+     z-index: 1;               /* Ensure arrows are above the slider */
+   }
+   
+   .slick-prev:hover, .slick-next:hover {
+        /* Background color on hover */
+   }
+   .slick-prev {
+     left: 0px !important;
+   }
+   
+   .slick-next {
+     right: 0px !important;
+   }
+   
+
+   .project-box-hover:hover{
+    transform: scale(1.1) !important;
+    transition: 0.5s !important;
+   }
+   .search-box{
+    border-radius: 30px 30px 0px 30px;
+background: #0F1E5A;
+   }
+   .select-box{
+    border-radius: 6px 6px 0px 6px;
+   }
