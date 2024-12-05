@@ -262,25 +262,6 @@
     
         z-index: 99;  
     }
-    .slick-prev, .slick-next {
-      /* Background color of arrows */
-     color: #fff;              /* Icon color */
-     border-radius: 50%;       /* Make the arrow circular */
-     width: 40px;
-     height: 40px;
-     z-index: 1;               /* Ensure arrows are above the slider */
-   }
-   
-   .slick-prev:hover, .slick-next:hover {
-        /* Background color on hover */
-   }
-   .slick-prev {
-     left: 0px !important;
-   }
-   
-   .slick-next {
-     right: 0px !important;
-   }
    
 
    .project-box-hover:hover{
