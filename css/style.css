@@ -119,6 +119,8 @@
 }
 
 .main-banner[data-aos="custom-zoom-in"] {
+  width: 100%;
+  overflow: hidden;
     transform: scale(0.5);      /* Start smaller */
     opacity: 0;                /* Start fully transparent */
     transition: transform 3s ease-out, opacity 3s ease-out;  /* Transition applied here */
