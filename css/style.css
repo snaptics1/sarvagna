@@ -210,6 +210,12 @@
     
         z-index: 99;
     }
+
+    .swiper-button-next, .swiper-button-prev{
+        color: #242365 !important;
+      width: 20px !important;
+      height: 20px !important;
+    }
     @media(max-width:1200px){
       .box1  .h1 h1 {
         font-size: 45px;
