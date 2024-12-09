@@ -79,16 +79,20 @@
 </head>
 
 <body>
-    <!-- loder -->
+    <!-- loader -->
     <div class="loder">
 
-
+        <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[100px] h-[100px] flex items-center justify-center  ">
+            <img src="./img/our-project.png" alt="">
+          </div>
         <div class="flex-col gap-4 w-full h-full flex items-center justify-center">
             <div
                 class="w-20 h-20 border-4 border-transparent text-blue-400 text-4xl animate-spin flex items-center justify-center border-t-[#e7c873] rounded-full">
                 <div
                     class="w-16 h-16 border-4 border-transparent text-red-400 text-2xl animate-spin flex items-center justify-center border-t-[#242365] rounded-full">
-                    <img src="./img/our-project.png" alt="">
+                  
+                 
+                    
                 </div>
             </div>
         </div>
@@ -1333,7 +1337,7 @@
 
     <script>
         $(document).ready(function () {
-            $(window).on('load', function () {
+            $(window).on('', function () {
                 $('.loder').delay(1000).fadeOut('slow');
             })
             $('.top,.bottom').addClass('maen');
