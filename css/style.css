@@ -79,7 +79,7 @@
     }
 
     .logo img {
-        width: 100%;
+       
     }
 
     .bar i {
@@ -293,4 +293,12 @@ background: #0F1E5A;
    }
    .select-box{
     border-radius: 6px 6px 0px 6px;
+   }
+   .dhatriplanImage img{
+    height: 650px;
+   }
+   @media screen and (max-width:767px){
+    .dhatriplanImage img{
+      height: 100%;
+     }
    }
