@@ -297,11 +297,10 @@ background: #0F1E5A;
    .dhatriplanImage img{
     height: 650px;
    }
-   .projectHeighlightsImages img:nth-child(1){
+   .projectHeighlightsImages .firstimage{
     height: 320px;
    }
-   .projectHeighlightsImages .flex div:nth-child(1) img,
-   .projectHeighlightsImages .flex div:nth-child(2) img {
+   .projectHeighlightsImages .secondimage{
        height: 250px;
        object-fit: cover; 
    }
