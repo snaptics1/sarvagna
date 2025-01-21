@@ -303,7 +303,7 @@ background: #0F1E5A;
    .projectHeighlightsImages .flex div:nth-child(1) img,
    .projectHeighlightsImages .flex div:nth-child(2) img {
        height: 250px;
-       object-fit: cover; /* Optional for keeping aspect ratio */
+       object-fit: cover; 
    }
    @media screen and (max-width:767px){
     .dhatriplanImage img{
