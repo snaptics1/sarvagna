@@ -301,4 +301,11 @@ background: #0F1E5A;
     .dhatriplanImage img{
       height: 100%;
      }
+     .main-banner{
+      height: 370px !important;
+     }
+     .main-banner img{
+      height:100% !important;
+      object-fit: cover;
+     }
    }
