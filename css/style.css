@@ -21,11 +21,16 @@
     color: #e7c873;
 }
 /* side bar */
-
-
+header.relative.top-0.left-0.right-0.z-50.bg-white {
+  background-color: #f8f0cc !important;
+}
+body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
 .barside {
     display: block;
-    width: 40%;
+    width: 250px;
     position: fixed;
     background-color: white;
     border-right: 1px solid #b5b5b5;

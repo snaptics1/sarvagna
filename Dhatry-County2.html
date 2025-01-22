@@ -68,45 +68,56 @@
     <header class="relative top-0 left-0 right-0 z-50 bg-white">
         <nav class="custom-container py-4 flex justify-between items-center ">
             <div class="logo">
-
                 <a href="index.html">
-                    <img src="./img/SarvagnaSVG.svg" class="w-[180px]" alt="">
+                    <img src="./img/SarvagnaSVG.svg" class="w-[150px]" alt="">
                 </a>
-
             </div>
             <div class="bar md:hidden" onclick="openNav()">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
 
-
             <div class="nav hidden md:block">
-
                 <div class="nav2">
-
                     <ul class="flex justify-between items-center gap-20">
                         <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
-                        <li><a href="projects.html" class="hover:text-[#e7c873] font-semibold">Projects </a></li>
+                        <!-- Dropdown for Projects -->
+                        <li class="relative group">
+                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center">
+                                Projects
+                                <i class="fa-solid fa-angle-down ml-2 mt-1 text-[14px]"></i>
+                            </a>
+                            <ul
+                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block">
+                                <li>
+                                    <a href="projects.html" class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        All Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="KSM-Enclave.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        KSM Enclave
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="MND-Enclave.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        MND Avenue
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Dhatry-County2.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        Dhatry County II
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
                         <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
-                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-
-
                     </ul>
                 </div>
-
-
-            </div>
-            <!-- <div class="nav-button cloud-button">
-                <button>
-                    <a href="contact.html">Cloud</a>
-                </button>
-            </div> -->
-            <div
-                class="hidden md:block nav-button bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
-
-                <a href="#" class="font-semibold text-[#0f1e5a]   ">Enquire Now</a>
-
             </div>
         </nav>
     </header>
@@ -123,7 +134,7 @@
 
     <section>
 
-        <div class="custom-container">
+        <div class="custom-container text-center mt-5">
             <h1 class="text-[#7D325B] text-4xl font-bold py-5">PROJECT</h1>
 
             <p class="text-[#7D325B] text-xl font-bold">Dhatry County II </p>
@@ -177,7 +188,7 @@
                         <div class="pt-8">
                             <button class="nav-button bg-[#e7c873] py-3 px-5 text-white">
 
-                                <a href="./img/KSM-Enclave.pdf" class="font-semibold text-[#0f1e5a]">Download
+                                <a href="./img/Dhatri-II.pdf" class="font-semibold text-[#0f1e5a]">Download
                                     Brochure</a>
                             </button>
 
@@ -294,15 +305,20 @@
                 </div>
 
                 <div class="md:w-[50%] w-full relative projectHeighlightsImages" data-aos="fade-up" data-aos-duration="1000">
-                    <div>
-                        <img class="w-full mb-4 firstimage" src="./img/DHATRY 3.png" alt="">
+                    <div class="flex justify-between mb-4">
+                        <div class="w-[48%]">
+                            <img class="secondimage" src="./img/nehru_orr.jpg" alt="">
+                        </div>
+                        <div class="w-[48%] secondimage">
+                            <img class="secondimage" src="./img/mmts.jpg" alt="">
+                        </div>
                     </div>
                     <div class="flex justify-between">
                         <div class="w-[48%]">
                             <img class="secondimage" src="./img/metrorail.jpg" alt="">
                         </div>
                         <div class="w-[48%] secondimage">
-                            <img class="secondimage" src="./img/train.jpg" alt="">
+                            <img class="secondimage" src="./img/mmts.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -428,155 +444,128 @@
 
     <!-- contact us map -->
 
-    <section class="py-4">
-        <div class="flex justify-between items-center flex-wrap gap-10 md:flex-nowrap">
-            <div class="md:w-[48%] w-full ">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7604.87563550418!2d78.4442764!3d17.6294111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb88c3a22797ed%3A0x8ef4c93340a0cd00!2sRailapur%2C%20Telangana%20501401!5e0!3m2!1sen!2sin!4v1737181986267!5m2!1sen!2sin"
-                    width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="custom-container mt-20">
+        <section class="py-4">
+            <div class="flex justify-between items-center flex-wrap gap-10 md:flex-nowrap">
+                <div class="md:w-[50%] w-full relative projectHeighlightsImages" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <div class="flex justify-between  mb-5">
+                        <div class="w-[48%]">
+                            <img class="secondimage" src="https://www.digitalstudioindia.com/cloud/2024/03/13/Ramoji-City.jpeg" alt="">
+                        </div>
+                        <div class="w-[48%] secondimage">
+                            <img class="secondimage" src="./img/train.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-between ">
+                        <div class="w-[48%]">
+                            <img class="secondimage" src="./img/metrorail.jpg" alt="">
+                        </div>
+                        <div class="w-[48%] secondimage">
+                            <img class="secondimage" src="./img/train.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="md:w-[45%] w-full px-5 space-y-5   flex-wrap gap-5" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="w-[90%] text-[#7D325B] text-4xl font-bold  ">Nearby Locations </p>
+    
+                    <ul class="space-y-5">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Near to Medchal Road (NH-44) 
+    
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Outer Ring Road 
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Dundigal IT Park 
+    
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            MMTS Station- Medchal
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            MLR Eng. Colleges 
+    
+                        </li>
+                        <!-- <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Mahindra Satyam
+    
+                        </li> -->
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                             St. Ann's School
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            DRS International School 
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Siva Sivani Public School 
+    
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            CMR Engg. College 
+    
+    
+                        </li>
+                        <!-- <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Sivasivani Management College 
+    
+    
+                        </li> -->
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bio-tech Park
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Run way - 9 Apparel Park (Chermas) 
+    
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Cine Planet multiplex 
+    
+                        </li>
+    
+                    </ul>
+    
+    
+                </div>
             </div>
-
-            <div class="md:w-[45%] w-full px-5 space-y-5   flex-wrap gap-5" data-aos="fade-up" data-aos-duration="1000">
-                <p class=" md:w-[48%] w-[90%] text-[#7D325B] text-4xl font-bold  ">Nearby Locations </p>
-
-                <ul class="space-y-5">
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Near to Medchal Road (NH-44) 
-
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Outer Ring Road 
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Dundigal IT Park 
-
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        MMTS Station- Medchal
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        MLR Eng. Colleges 
-
-                    </li>
-                    <!-- <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Mahindra Satyam
-
-                    </li> -->
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                         St. Ann's School
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        DRS International School 
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Siva Sivani Public School 
-
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        CMR Engg. College 
-
-
-                    </li>
-                    <!-- <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Sivasivani Management College 
-
-
-                    </li> -->
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Bio-tech Park
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Run way - 9 Apparel Park (Chermas) 
-
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Cine Planet multiplex 
-
-                    </li>
-
-                </ul>
-
-
-            </div>
-        </div>
-
-    </section>
+    
+        </section>
+    </div>
 
     <!-- Have any questions? -->
 
     <section class="bg-[url('./img/backgroundwaves.png')]">
         <div class="custom-container">
-            <div class="flex justify-center items-center py-20 md:flex-nowrap flex-wrap gap-10 md:gap-0">
+            <div class="flex justify-center items-center py-20 md:flex-nowrap flex-wrap gap-10">
 
                 <div class="md:w-[50%] w-full space-y-5" data-aos="fade-up" data-aos-duration="1000">
-                    <!-- <div
-                        class="md:w-[70%] flex justify-start items-center border border-[#0f1e5a] bg-[#FEFCF8] py-4 px-5 gap-5 ">
-                        <div class="icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <p class="text-[#0f1e5a] font-semibold text-xl">Call Us</p>
-                            <p class="text-[#0f1e5a]">+91 - 9000503000</p>
-                        </div>
-                    </div> -->
-
-                    <div
-                        class="md:w-[70%] flex justify-start items-center border border-[#0f1e5a] bg-[#FEFCF8] py-4 px-5 gap-5 ">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="text">
-                            <p class="text-[#0f1e5a] font-semibold text-xl">Mail :</p>
-                            <p class="text-[#0f1e5a]">info@sarvagnaprojects.com</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="md:w-[70%] flex justify-start items-center border border-[#0f1e5a] bg-[#FEFCF8] py-4 px-5 gap-5 ">
-                        <div class="icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <p class="text-[#0f1e5a] font-semibold text-xl">Opening Hours :</p>
-                            <p class="text-[#0f1e5a]">09:00 am to 6:00 pm</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="md:w-[70%] flex justify-start items-center border border-[#0f1e5a] bg-[#FEFCF8] py-4 px-5 gap-5 ">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="text">
-                            <p class="text-[#0f1e5a] font-semibold text-xl">Location :</p>
-                            <p class="text-[#0f1e5a]">15-21-32/46&47, 3rd Floor, M Squares Building,
-                                Balajinagar, Kukatpally, Hyderabad, TG - 500 072.
-                            </p>
-                        </div>
-                    </div>
-
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3802.3930208888855!2d78.43034407517055!3d17.631535083297923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDM3JzUzLjUiTiA3OMKwMjUnNTguNSJF!5e0!3m2!1sen!2sin!4v1737525848453!5m2!1sen!2sin"
+                    width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
 
@@ -619,7 +608,7 @@
 
                                     <div class="md:w-[100%] w-full">
                                         <textarea name="Phone Number"
-                                            class="p-3 text-[#0f1e5a] w-full border h-[200px]  px-3">Message</textarea>
+                                            class="p-3 text-[#0f1e5a] w-full border h-[150px]  px-3">Message</textarea>
                                     </div>
 
 
@@ -673,7 +662,7 @@
             <div class="md:w-[20%] w-full bg-white" data-aos="fade-right">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
                     <div class="flex items-center justify-center items-center w-[100%] h-[300px]">
-                        <img src="./img/SarvagnaSVG.svg" class="w-[180px]" alt="">
+                        <img src="./img/SarvagnaSVG.svg" class="w-[150px]" alt="">
                     </div>
                 </a>
             </div>
@@ -792,7 +781,7 @@
 
                 <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap ">
                     <div class="border-t-2 border-[#e7c873]  px-10">
-                        <p class=" py-5 text-white">Copyright © 2024 Sarvagna Projects | All Rights Reserved.</p>
+                        <p class=" py-5 text-white">Copyright © 2025 Sarvagna Projects | All Rights Reserved.</p>
 
 
                     </div>

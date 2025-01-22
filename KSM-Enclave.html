@@ -68,45 +68,56 @@
     <header class="relative top-0 left-0 right-0 z-50 bg-white">
         <nav class="custom-container py-4 flex justify-between items-center ">
             <div class="logo">
-
                 <a href="index.html">
-                       <img src="./img/SarvagnaSVG.svg" class="w-[180px]" alt="">
+                    <img src="./img/SarvagnaSVG.svg" class="w-[150px]" alt="">
                 </a>
-
             </div>
             <div class="bar md:hidden" onclick="openNav()">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
 
-
             <div class="nav hidden md:block">
-
                 <div class="nav2">
-
                     <ul class="flex justify-between items-center gap-20">
                         <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
-                        <li><a href="projects.html" class="hover:text-[#e7c873] font-semibold">Projects </a></li>
+                        <!-- Dropdown for Projects -->
+                        <li class="relative group">
+                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center">
+                                Projects
+                                <i class="fa-solid fa-angle-down ml-2 mt-1 text-[14px]"></i>
+                            </a>
+                            <ul
+                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block">
+                                <li>
+                                    <a href="projects.html" class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        All Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="KSM-Enclave.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        KSM Enclave
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="MND-Enclave.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        MND Avenue
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Dhatry-County2.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        Dhatry County II
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
                         <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
-                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-
-
                     </ul>
                 </div>
-
-
-            </div>
-            <!-- <div class="nav-button cloud-button">
-                <button>
-                    <a href="contact.html">Cloud</a>
-                </button>
-            </div> -->
-            <div
-                class="hidden md:block nav-button bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
-
-                <a href="#" class="font-semibold text-[#0f1e5a]   ">Enquire Now</a>
-
             </div>
         </nav>
     </header>
@@ -123,7 +134,7 @@
 
     <section>
 
-        <div class="custom-container">
+        <div class="custom-container text-center mt-5">
             <h1 class="text-[#7D325B] text-4xl font-bold py-5">PROJECT</h1>
 
             <p class="text-[#7D325B] text-xl font-bold">KSM Enclave Plots in Vanastalipuram</p>
@@ -274,7 +285,7 @@
 
 
 
-                    
+
                 </div>
 
                 <div class="md:w-[42%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
@@ -409,87 +420,102 @@
 
 
 
- <!-- contact us map -->
+    <!-- contact us map -->
 
- <section class="py-4">
-    <div class="flex justify-between items-center flex-wrap gap-10 md:flex-nowrap">
-        <div class="md:w-[48%] w-full ">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3809.0421569984014!2d78.5892946!3d17.313515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1007007eab9%3A0x2c309d125249572e!2sSarvagna%20KSM%20Enclave!5e0!3m2!1sen!2sin!4v1733740960744!5m2!1sen!2sin"
-                width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <div class="custom-container mt-20">
+    <section class="py-4">
+        <div class="flex justify-between items-center flex-wrap gap-10 md:flex-nowrap">
+            <div class="md:w-[50%] w-full relative projectHeighlightsImages" data-aos="fade-up"
+                data-aos-duration="1000">
+                <div class="flex justify-between  mb-5">
+                    <div class="w-[48%]">
+                        <img class="secondimage" src="https://www.digitalstudioindia.com/cloud/2024/03/13/Ramoji-City.jpeg" alt="">
+                    </div>
+                    <div class="w-[48%] secondimage">
+                        <img class="secondimage" src="./img/train.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between ">
+                    <div class="w-[48%]">
+                        <img class="secondimage" src="./img/metrorail.jpg" alt="">
+                    </div>
+                    <div class="w-[48%] secondimage">
+                        <img class="secondimage" src="./img/train.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-[45%] w-full px-5 space-y-5 flex-wrap gap-5" data-aos="fade-up" data-aos-duration="1000">
+                <p class=" w-[90%] text-[#7D325B] text-4xl font-bold  ">Nearby Locations </p>
+
+                <ul class="space-y-5">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        LB Nagar Junction (Metro Connectivity)
+
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Vanasthalipuram
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Hyderabad- Vijayawada National Highway
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Bhagyalata Bus Stop
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Hayath Nagar
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        ORR Peddambepet Exit
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ramoji Film City
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        ORR Bonguluru Junction Exit (Adibatla)
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Injapur X Road
+
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Nehru ORR
+
+
+                    </li>
+
+                </ul>
+
+
+            </div>
         </div>
 
-        <div class="md:w-[45%] w-full px-5 space-y-5   flex-wrap gap-5" data-aos="fade-up" data-aos-duration="1000">
-            <p class=" md:w-[48%] w-[90%] text-[#7D325B] text-4xl font-bold  ">Nearby Locations </p>
-
-            <ul class="space-y-5">
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                LB Nagar Junction (Metro Connectivity)
-                
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Vanasthalipuram
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Hyderabad- Vijayawada National Highway
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Bhagyalata Bus Stop
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Hayath Nagar
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                ORR Peddambepet Exit
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Ramoji Film City
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                ORR Bonguluru Junction Exit (Adibatla)
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Injapur X Road
-                
-             </li>
-             <li>
-                <i class="fa-solid fa-location-dot"></i>
-                Nehru ORR
-
-                
-             </li>
-
-            </ul>
-            
-
-        </div>
-    </div>
-
-</section>
+    </section>
+   </div>
 
     <!-- Have any questions? -->
 
     <section class="bg-[url('./img/backgroundwaves.png')]">
         <div class="custom-container">
-            <div class="flex justify-center items-center py-20 md:flex-nowrap flex-wrap gap-10 md:gap-0">
+            <div class="flex justify-center items-center py-20 md:flex-nowrap flex-wrap gap-10">
 
                 <div class="md:w-[50%] w-full space-y-5" data-aos="fade-up" data-aos-duration="1000">
                     <!-- <div
@@ -503,7 +529,7 @@
                         </div>
                     </div> -->
 
-                    <div
+                    <!-- <div
                         class="md:w-[70%] flex justify-start items-center border border-[#0f1e5a] bg-[#FEFCF8] py-4 px-5 gap-5 ">
                         <div class="icon">
                             <i class="fa-solid fa-envelope"></i>
@@ -538,8 +564,12 @@
                                 Bhagyalata Bus Stop
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3809.0421569984014!2d78.5892946!3d17.313515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1007007eab9%3A0x2c309d125249572e!2sSarvagna%20KSM%20Enclave!5e0!3m2!1sen!2sin!4v1733740960744!5m2!1sen!2sin"
+                        width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
 
@@ -582,7 +612,7 @@
 
                                     <div class="md:w-[100%] w-full">
                                         <textarea name="Phone Number"
-                                            class="p-3 text-[#0f1e5a] w-full border h-[200px]  px-3">Message</textarea>
+                                            class="p-3 text-[#0f1e5a] w-full border h-[150px]  px-3">Message</textarea>
                                     </div>
 
 
@@ -608,7 +638,7 @@
 
 
 
-   
+
 
 
 
@@ -625,7 +655,7 @@
 
     <!-- footer -->
 
-   
+
     <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
         <div class="absolute top-0 right-0 w-[100px] h-[100px]">
             <img src="./img/footer-bg-icon.svg" alt="" data-aos="fade-up-right">
@@ -636,7 +666,7 @@
             <div class="md:w-[20%] w-full bg-white" data-aos="fade-right">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
                     <div class="flex items-center justify-center items-center w-[100%] h-[300px]">
-                        <img src="./img/SarvagnaSVG.svg" class="w-[180px]" alt="">
+                        <img src="./img/SarvagnaSVG.svg" class="w-[150px]" alt="">
                     </div>
                 </a>
             </div>
@@ -659,7 +689,7 @@
                                 <a rel="noopener noreferrer" href="projects.html"
                                     class=" py-1 inline-block text-white">Projects </a>
                             </li>
-                         
+
 
                             <li>
                                 <a rel="noopener noreferrer" href="contact.html"
@@ -755,17 +785,17 @@
 
                 <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap ">
                     <div class="border-t-2 border-[#e7c873]  px-10">
-                        <p class=" py-5 text-white">Copyright © 2024 Sarvagna Projects | All Rights Reserved.</p>
-    
-    
+                        <p class=" py-5 text-white">Copyright © 2025 Sarvagna Projects | All Rights Reserved.</p>
+
+
                     </div>
                     <div class="border-t-2 border-[#e7c873]  px-10">
                         <p class=" py-5 text-white"> <a href="privacy&policy.html"> Privacy Policy</a> </p>
-    
-    
-                    </div>
+
 
                     </div>
+
+                </div>
             </div>
 
         </div>
@@ -810,7 +840,7 @@
         </div>
     </footer>
 
- 
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Initialize Swiper -->

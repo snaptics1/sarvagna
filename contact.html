@@ -65,47 +65,59 @@
         </li>
     </ul>
 </div>
-    <header  class="relative top-0 left-0 right-0 z-50 bg-white">
+    <header class="relative top-0 left-0 right-0 z-50 bg-white">
         <nav class="custom-container py-4 flex justify-between items-center ">
             <div class="logo">
-
                 <a href="index.html">
-                       <img src="./img/SarvagnaSVG.svg" class="w-[180px]" alt="">
+                    <img src="./img/SarvagnaSVG.svg" class="w-[150px]" alt="">
                 </a>
-
             </div>
             <div class="bar md:hidden" onclick="openNav()">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
 
-
             <div class="nav hidden md:block">
-
                 <div class="nav2">
-
                     <ul class="flex justify-between items-center gap-20">
                         <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
-                        <li><a href="projects.html" class="hover:text-[#e7c873] font-semibold">Projects </a></li>
-                        <li ><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us </a></li>
-                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
-
-
-
+                        <!-- Dropdown for Projects -->
+                        <li class="relative group">
+                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center">
+                                Projects
+                                <i class="fa-solid fa-angle-down ml-2 mt-1 text-[14px]"></i>
+                            </a>
+                            <ul
+                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block">
+                                <li>
+                                    <a href="projects.html" class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        All Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="KSM-Enclave.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        KSM Enclave
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="MND-Enclave.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        MND Avenue
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Dhatry-County2.html"
+                                        class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
+                                        Dhatry County II
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
                     </ul>
                 </div>
-
-
-            </div>
-            <!-- <div class="nav-button cloud-button">
-                <button>
-                    <a href="contact.html">Cloud</a>
-                </button>
-            </div> -->
-            <div class="hidden md:block nav-button bg-[#e7c873]  hover:text-[#e7c873] py-3 px-5 text-white transition duration-75">
-
-                <a href="#" class="font-semibold text-[#0f1e5a]   ">Enquire Now</a>
-
             </div>
         </nav>
     </header>
@@ -272,7 +284,7 @@
             <div class="md:w-[20%] w-full bg-white" data-aos="fade-right">
                 <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
                     <div class="flex items-center justify-center items-center w-[100%] h-[300px]">
-                        <img src="./img/SarvagnaSVG.svg" class="w-[180px]" alt="">
+                        <img src="./img/SarvagnaSVG.svg" class="w-[150px]" alt="">
                     </div>
                 </a>
             </div>
@@ -391,7 +403,7 @@
 
                 <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap ">
                     <div class="border-t-2 border-[#e7c873]  px-10">
-                        <p class=" py-5 text-white">Copyright © 2024 Sarvagna Projects | All Rights Reserved.</p>
+                        <p class=" py-5 text-white">Copyright © 2025 Sarvagna Projects | All Rights Reserved.</p>
     
     
                     </div>
