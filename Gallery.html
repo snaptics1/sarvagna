@@ -8,63 +8,95 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .swiper {
-            width: 90%;
+      
 
+
+        .container {
+            max-width: 80rem;
+            width: 100%;
+            padding: 4rem 2rem;
+            margin: 0 auto;
         }
 
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-
-            display: flex;
+        .main .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
             justify-content: center;
             align-items: center;
         }
 
-        .swiper-slide img {
+        .card {
+            color: #252a32;
+            border-radius: 2px;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+        }
+
+        .card-image {
+            position: relative;
             display: block;
+            width: 100%;
+            padding-top: 70%;
+            background: #ffffff;
+        }
+
+        .card-image img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-    </style>
 
+        @media only screen and (max-width: 600px) {
+            .main .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- header -->
     <div class="barside py-5" data-aos="zoom-out-down" data-aos-duration="5000" data-aos-easing="ease-in-out"
-    data-aos-delay="500" data-aos-once="true">
-    <ul class="flex justify-between items-center flex-col gap-2">
-        <li class="shadow-xl w-full ">
-            <a href="index.html" class="hover:text-[#e7c873] font-semibold">
-                <i class="fa-solid fa-angle-right"></i>
-                Home</a>
-        </li>
-        <li class="shadow-xl w-full ">
-            <a href="about.html" class="hover:text-[#e7c873] font-semibold">
-                <i class="fa-solid fa-angle-right"></i>
-                About Us</a>
-        </li>
-        <li class="shadow-xl w-full ">
-            <a href="projects.html" class="hover:text-[#e7c873] font-semibold">
-                <i class="fa-solid fa-angle-right"></i>
-                Projects</a>
-        </li>
-        <li class="shadow-xl w-full ">
-            <a href="contact.html" class="hover:text-[#e7c873] font-semibold">
-                <i class="fa-solid fa-angle-right"></i>
-                Contact Us</a>
-        </li>
-    </ul>
-</div>
+        data-aos-delay="500" data-aos-once="true">
+        <ul class="flex justify-between items-center flex-col gap-2">
+            <li class="shadow-xl w-full ">
+                <a href="index.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Home</a>
+            </li>
+            <li class="shadow-xl w-full ">
+                <a href="about.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    About Us</a>
+            </li>
+            <li class="shadow-xl w-full ">
+                <a href="projects.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Projects</a>
+            </li>
+            <li class="shadow-xl w-full ">
+                <a href="contact.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Contact Us</a>
+            </li>
+        </ul>
+    </div>
+
+
     <header class="relative top-0 left-0 right-0 z-50 bg-white">
         <nav class="custom-container py-4 flex justify-between items-center ">
             <div class="logo">
@@ -122,159 +154,112 @@
         </nav>
     </header>
 
-    <!-- main banner -->
-
-    <section class="bg-[url('./img/About-us.png')] bg-no-repeat bg-cover">
-        <div class="custom-container">
-           <div class="flex justify-center items-center py-20 md:flex-nowrap flex-wrap">
-            <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
-                <div class="text-left px-10">
-                    <h1 class="text-[#0f1e5a] text-4xl font-bold py-5">Privacy & Policy</h1>
-                    <!-- <p class="text-[#0f1e5a] ">Home / Contact</p> -->
-                       
+    <main class="main">
+        <div class="container">
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/11/02/22/33/autumn-7566201_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/02/22/33/autumn-7566201_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <a href="https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226_1280.jpg"
+                        data-fancybox="gallery" data-caption="Caption Images 1">
+                        <img src="https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226_1280.jpg"
+                            alt="Image Gallery">
+                    </a>
+                </div>
             </div>
         </div>
+    </main>
 
-        <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
-            </div>
-
-        </div>
-        </div>
-    </section>
-
-    <!-- about us -->
-
-    <div class="bg-gradient-to-r from-gray-50 to-gray-100 min-h-screen py-12">
-        <div class=" custom-container px-6">
-            <div class="bg-white rounded-lg shadow-xl p-8">
-                <!-- Header -->
-                <!-- <h1 class="text-4xl font-extrabold text-gray-800 text-center mb-10">
-                    <span class="text-[#0f1e5a]">Privacy Policy</span>
-                </h1> -->
-      
-                <!-- Section: Introduction -->
-                <section class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    <p class="mb-4">
-                        At Sarvagna , we prioritize your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you interact with our services.
-                </section>
-      
-                <!-- Divider -->
-                <div class="border-b border-gray-300 my-6"></div>
-      
-                <!-- Section: Information We Collect -->
-                <section class="mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-[#0f1e5a] text-white w-8 h-8 flex justify-center items-center rounded-full mr-3">
-                            1
-                        </span>
-                        Information We Collect:
-                    </h2>
-                    <ul class="list-inside list-disc text-gray-600 pl-4 space-y-2">
-                        <li><strong>Personal details:</strong> Name, email, phone number, and address.</li>
-                        <!-- <li>Property preferences and transaction history.</li>
-                        <li>Payment details and identification documents where applicable.</li> -->
-                       
-                    </ul>
-                </section>
-      
-                <!-- Section: How We Use Information -->
-                <section class="mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-[#0f1e5a] text-white w-8 h-8 flex justify-center items-center rounded-full mr-3">
-                            2
-                        </span>
-                        How We Use Your Information:
-                    </h2>
-                    <ul class="list-inside list-disc text-gray-600 pl-4 space-y-2">
-                        <li>To process inquiries, transactions, and provide tailored property recommendations.</li>
-                        <li>For internal analytics to enhance our services.</li>
-                        <li>To send updates, promotional offers, or policy changes.</li>
-                       
-                    </ul>
-                </section>
-      
-                <!-- Section: Data Sharing -->
-                <section class="mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-[#0f1e5a] text-white w-8 h-8 flex justify-center items-center rounded-full mr-3">
-                            3
-                        </span>
-                        Data Sharing:
-                    </h2>
-                    <p class="text-gray-600 mb-4">
-                        We do not sell or rent your information. Data may be shared with trusted partners for completing transactions or fulfilling legal obligations.
-                    </p>
-                   
-                </section>
-      
-                <!-- Section: Account Deletion -->
-                <section class="mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-[#0f1e5a] text-white w-8 h-8 flex justify-center items-center rounded-full mr-3">
-                            4
-                        </span>
-                        Security Measures:
-                    </h2>
-                    <p class="text-gray-600 mb-4">
-                        We implement strict data security protocols to prevent unauthorized access or breaches.
-                    </p>
-                   
-                
-                </section>
-      
-                <!-- Section: Contact Us -->
-                <section class="mb-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-[#0f1e5a] text-white w-8 h-8 flex justify-center items-center rounded-full mr-3">
-                            5
-                        </span>
-                        Your Rights:
-                    </h2>
-                    <p class="text-gray-600 mb-4">
-                        You can request access, updates, or deletion of your personal data at any time.
-                    </p>
-                </section>
-      
-                <!-- Section: Data Deletion Form -->
-                <section class="mt-8">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
-                        <span class="bg-[#0f1e5a] text-white w-8 h-8 flex justify-center items-center rounded-full mr-3">
-                            6
-                        </span>
-                        Updates to this Policy:
-                    </h2>
-                    <p class="text-gray-600 mb-4">
-                        We reserve the right to amend this policy. Changes will be communicated via email or on our website.
-                    </p>
-                  
-                </section>
-            </div>
-        </div>
-      </div>
-
-
-    <!-- our expeience -->
-   
-
-
-       <!-- about us -->
-
-   
-  
-
-
-    
-
-
-
-    
-
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "slideShow",
+                "thumbs",
+                "zoom",
+                "fullScreen",
+                "share",
+                "close"
+            ],
+            loop: false,
+            protect: true
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
 
     <!-- footer -->
 
-  
     <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
         <div class="absolute top-0 right-0 w-[100px] h-[100px]">
             <img src="./img/footer-bg-icon.svg" alt="" data-aos="fade-up-right">
@@ -308,7 +293,7 @@
                                 <a rel="noopener noreferrer" href="projects.html"
                                     class=" py-1 inline-block text-white">Projects </a>
                             </li>
-                         
+
 
                             <li>
                                 <a rel="noopener noreferrer" href="contact.html"
@@ -400,21 +385,22 @@
                     </div>
 
                 </div>
-
-
                 <div class="flex justify-between items-center py-10 px-10 md:flex-nowrap flex-wrap ">
                     <div class="border-t-2 border-[#e7c873]  px-10">
                         <p class=" py-5 text-white">Copyright © 2025 Sarvagna Projects | All Rights Reserved.</p>
-    
-    
+
+
                     </div>
                     <div class="border-t-2 border-[#e7c873]  px-10">
                         <p class=" py-5 text-white"> <a href="privacy&policy.html"> Privacy Policy</a> </p>
-    
-    
-                    </div>
+
 
                     </div>
+
+                </div>
+
+
+
             </div>
 
         </div>
@@ -459,52 +445,15 @@
         </div>
     </footer>
 
-   
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            // centeredSlides: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },            
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 2,
-                    spaceBetween: 50,
-                },
-            },
-        });
-    </script>
 
-    <script>
-        AOS.init();
-    </script>
-
-    <script>
-        function openNav() {
-            document.getElementsByClassName("barside")[0].classList.toggle("barside1");
-        }
-
-
-    </script>
 </body>
 
 </html>
