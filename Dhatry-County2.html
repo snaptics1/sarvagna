@@ -105,16 +105,16 @@
             <div class="nav hidden md:block">
                 <div class="nav2">
                     <ul class="flex justify-between items-center gap-10">
-                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
-                        <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
+                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">About Us</a></li>
                         <!-- Dropdown for Projects -->
                         <li class="relative group">
-                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center">
+                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center md:text-[17px]">
                                 Projects
                                 <i class="fa-solid fa-angle-down ml-2 mt-1 text-[14px]"></i>
                             </a>
                             <ul
-                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block">
+                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block z-56">
                                 <li>
                                     <a href="projects.html" class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
                                         All Projects
@@ -140,8 +140,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
-                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
+                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Gallery</a></li> 
+                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                     </div>
 
                     <div
-                        class="absolute -top-8 md:-left-8 md:w-[350px] w-[200px] md:h-[600px] h-[200px]  -z-10 p-1 rounded-full">
+                        class="absolute -top-12 md:-left-8 md:w-[350px] w-[200px] md:h-[500px] h-[200px]  -z-10 p-1 rounded-full">
                         <img src="./img/project-overview-img-1.png" class="w-full h-full object-cover" alt="">
 
                     </div>
@@ -348,7 +348,7 @@
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/nehru_orr.jpg" alt="">
                         </div>
-                        <div class="w-[48%] ">
+                        <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/mmts.jpg" alt="">
                         </div>
                     </div>
@@ -356,7 +356,7 @@
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/metrorail.jpg" alt="">
                         </div>
-                        <div class="w-[48%] ">
+                        <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/gatedcommunity.jpeg" alt="">
                         </div>
                     </div>
@@ -367,50 +367,6 @@
     </section>
 
 
-    <div class="horizontalSwiperParent py-12">
-        <h2 class="text-[#242365] text-4xl text-center font-bold pt-0 py-5">GALLERY</h2> <br>
-        <swiper-container class="customSwiper" pagination="true" loop="true">
-            <swiper-slide class="pb-10">
-                <img src="./img/dhatryGallary1.avif" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/DHATRY 1.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/nehru_orr.jpg" alt="">
-            </swiper-slide>
-
-            <swiper-slide class="pb-10">
-                <img src="./img/dhatryGallary2.avif" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/gatedcommunity.jpeg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/metrorail.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/DHATRY 3.png" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/cmrcollege.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/mmts.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/cineplanet.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/School-Building.webp" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/dhatribelowimages.jpg" alt="">
-            </swiper-slide>
-
-
-        </swiper-container>
-    </div>
 
 
 
@@ -497,6 +453,50 @@
 
 
 
+    <div class="horizontalSwiperParent pt-12 ">
+        <h2 class="text-[#242365] text-4xl text-center font-bold pt-0 py-5">GALLERY</h2> <br>
+        <swiper-container class="customSwiper" pagination="true" loop="true">
+            <swiper-slide class="pb-10">
+                <img src="./img/dhatryGallary1.avif" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/DHATRY 1.png" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/nehru_orr.jpg" alt="">
+            </swiper-slide>
+
+            <swiper-slide class="pb-10">
+                <img src="./img/dhatryGallary2.avif" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/gatedcommunity.jpeg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/metrorail.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/DHATRY 3.png" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/cmrcollege.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/mmts.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/cineplanet.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/School-Building.webp" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/dhatribelowimages.jpg" alt="">
+            </swiper-slide>
+
+
+        </swiper-container>
+    </div>
 
     <!-- contact us map -->
 
@@ -509,7 +509,7 @@
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/mmts.jpg" alt="">
                         </div>
-                        <div class="w-[48%] ">
+                        <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/School-Building.webp" alt="">
                         </div>
                     </div>
@@ -517,7 +517,7 @@
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/cineplanet.jpg" alt="">
                         </div>
-                        <div class="w-[48%] ">
+                        <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/cmrcollege.jpg" alt="">
                         </div>
                     </div>

@@ -77,10 +77,37 @@
                 grid-template-columns: 1fr;
                 grid-gap: 1rem;
             }
+
             .image-gallery-heading {
-            font-size: 1.5rem;
+                font-size: 1.5rem;
+            }
         }
+
+        .hidden {
+            display: none;
         }
+
+        .visible {
+            display: block;
+        }
+
+        .tab:hover {
+            background: #242365 !important;
+            color: #e7c873;
+        }
+
+        .tab-active {
+            background: #242365 !important;
+            color: #e7c873 !important;
+        }
+
+        .tab-active {
+            background: #242365 !important;
+            color: #e7c873 !important;
+        }
+        /* .fancybox__counter{
+            display: none !important;
+        } */
     </style>
 </head>
 
@@ -132,16 +159,17 @@
             <div class="nav hidden md:block">
                 <div class="nav2">
                     <ul class="flex justify-between items-center gap-10">
-                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
-                        <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
+                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">About Us</a>
+                        </li>
                         <!-- Dropdown for Projects -->
                         <li class="relative group">
-                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center">
+                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center md:text-[17px]">
                                 Projects
                                 <i class="fa-solid fa-angle-down ml-2 mt-1 text-[14px]"></i>
                             </a>
                             <ul
-                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block">
+                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block z-56">
                                 <li>
                                     <a href="projects.html" class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
                                         All Projects
@@ -167,8 +195,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
-                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
+                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Gallery</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Contact
+                                Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -177,123 +207,134 @@
     <div class="image-gallery-banner">
         <h1 class="image-gallery-heading">Explore Our Gallery</h1>
     </div>
+
+    <!-- Tabs -->
+    <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-md">
+        <div class="flex border-b border-gray-200">
+            <button class="tab w-1/4 py-2 text-center border-b-2 border-transparent focus:outline-none"
+                data-category="all" onclick="showTab('all')">All Projects</button>
+            <button class="tab w-1/4 py-2 text-center border-b-2 border-transparent focus:outline-none"
+                data-category="ksm" onclick="showTab('ksm')">KSM Enclave</button>
+            <button class="tab w-1/4 py-2 text-center border-b-2 border-transparent focus:outline-none"
+                data-category="mnd" onclick="showTab('mnd')">MND Enclave</button>
+            <button class="tab w-1/4 py-2 text-center border-b-2 border-transparent focus:outline-none"
+                data-category="dhatry" onclick="showTab('dhatry')">Dhatry County 11</button>
+        </div>
+    </div>
+
+
+    </div>
+    <!-- tabs section ends here -->
     <main class="main">
         <div class="custom-container">
-            <div class="card">
+            <div class="card all dhatry">
                 <div class="card-image">
-                    <a href="./img/DHATRY 1.png"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/DHATRY 1.png"
-                            alt="Image Gallery">
+                    <!-- Fancybox for "all" -->
+                    <a href="./img/DHATRY 1.png" data-fancybox="all" data-caption="Dhatry Image 1">
+                        <img src="./img/DHATRY 1.png" alt="Dhatry Image 1">
                     </a>
+                    <!-- Fancybox for "dhatry" -->
+                    <a href="./img/DHATRY 1.png" data-fancybox="dhatry" data-caption="Dhatry Image 1"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all ksm">
                 <div class="card-image">
-                    <a href="./img/highway-min_11zon (1).jpg"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/highway-min_11zon (1).jpg"
-                            alt="Image Gallery">
+                    <a href="./img/highway-min_11zon (1).jpg" data-fancybox="all" data-caption="KSM Image 1">
+                        <img src="./img/highway-min_11zon (1).jpg" alt="KSM Image 1">
                     </a>
+                    <a href="./img/highway-min_11zon (1).jpg" data-fancybox="ksm" data-caption="KSM Image 1"></a>
                 </div>
             </div>
-           
-            <div class="card">
+            <div class="card all mnd">
                 <div class="card-image">
-                    <a href="./img/kondlakoyaitpark.jpg"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/kondlakoyaitpark.jpg"
-                            alt="Image Gallery">
+                    <a href="./img/kondlakoyaitpark.jpg" data-fancybox="all" data-caption="MND Image 1">
+                        <img src="./img/kondlakoyaitpark.jpg" alt="MND Image 1">
                     </a>
+                    <a href="./img/kondlakoyaitpark.jpg" data-fancybox="mnd" data-caption="MND Image 1"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all dhatry">
                 <div class="card-image">
-                    <a href="./img/clubhouse.jpg"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/clubhouse.jpg"
-                            alt="Image Gallery">
+                    <a href="./img/clubhouse.jpg" data-fancybox="all" data-caption="Dhatry Image 2">
+                        <img src="./img/clubhouse.jpg" alt="Dhatry Image 2">
                     </a>
+                    <a href="./img/clubhouse.jpg" data-fancybox="dhatry" data-caption="Dhatry Image 2"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all ksm">
                 <div class="card-image">
-                    <a href="./img/villaplots.avif"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/villaplots.avif"
-                            alt="Image Gallery">
+                    <a href="./img/villaplots.avif" data-fancybox="all" data-caption="KSM Image 2">
+                        <img src="./img/villaplots.avif" alt="KSM Image 2">
                     </a>
+                    <a href="./img/villaplots.avif" data-fancybox="ksm" data-caption="KSM Image 2"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all dhatry">
                 <div class="card-image">
-                    <a href="./img/dhatryGallary1.avif"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/dhatryGallary1.avif"
-                            alt="Image Gallery">
+                    <a href="./img/dhatryGallary1.avif" data-fancybox="all" data-caption="Dhatry Image 3">
+                        <img src="./img/dhatryGallary1.avif" alt="Dhatry Image 3">
                     </a>
+                    <a href="./img/dhatryGallary1.avif" data-fancybox="dhatry" data-caption="Dhatry Image 3"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all dhatry">
                 <div class="card-image">
-                    <a href="./img/DHATRY 3.png"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/DHATRY 3.png"
-                            alt="Image Gallery">
+                    <a href="./img/DHATRY 3.png" data-fancybox="all" data-caption="Dhatry Image 4">
+                        <img src="./img/DHATRY 3.png" alt="Dhatry Image 4">
                     </a>
+                    <a href="./img/DHATRY 3.png" data-fancybox="dhatry" data-caption="Dhatry Image 4"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all dhatry">
                 <div class="card-image">
-                    <a href="./img/dhatryGallary2.avif"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/dhatryGallary2.avif"
-                            alt="Image Gallery">
+                    <a href="./img/dhatryGallary2.avif" data-fancybox="all" data-caption="Dhatry Image 5">
+                        <img src="./img/dhatryGallary2.avif" alt="Dhatry Image 5">
                     </a>
+                    <a href="./img/dhatryGallary2.avif" data-fancybox="dhatry" data-caption="Dhatry Image 5"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all mnd">
                 <div class="card-image">
-                    <a href="./img/mnd.jpeg"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/mnd.jpeg"
-                            alt="Image Gallery">
+                    <a href="./img/mnd.jpeg" data-fancybox="all" data-caption="MND Image 2">
+                        <img src="./img/mnd.jpeg" alt="MND Image 2">
                     </a>
+                    <a href="./img/mnd.jpeg" data-fancybox="mnd" data-caption="MND Image 2"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all ksm">
                 <div class="card-image">
-                    <a href="./img/ksm-main-img.jpeg"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/ksm-main-img.jpeg"
-                            alt="Image Gallery">
+                    <a href="./img/ksm-main-img.jpeg" data-fancybox="all" data-caption="KSM Image 3">
+                        <img src="./img/ksm-main-img.jpeg" alt="KSM Image 3">
                     </a>
+                    <a href="./img/ksm-main-img.jpeg" data-fancybox="ksm" data-caption="KSM Image 3"></a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card all ksm">
                 <div class="card-image">
-                    <a href="./img/KSM-bg.png"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/KSM-bg.png"
-                            alt="Image Gallery">
+                    <a href="./img/KSM-bg.png" data-fancybox="all" data-caption="KSM Image 4">
+                        <img src="./img/KSM-bg.png" alt="KSM Image 4">
                     </a>
+                    <a href="./img/KSM-bg.png" data-fancybox="ksm" data-caption="KSM Image 4"></a>
                 </div>
             </div>
-       
-            <div class="card">
+
+
+            <div class="card all dhatry">
                 <div class="card-image">
-                    <a href="./img/cineplanet.jpg"
-                        data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="./img/cineplanet.jpg"
-                            alt="Image Gallery">
+                    <!-- Fancybox for "all" gallery -->
+                    <a href="./img/cineplanet.jpg" data-fancybox="all" data-caption="All Projects - Dhatry Image 6">
+                        <img src="./img/cineplanet.jpg" alt="Dhatry Image 6">
                     </a>
+                    <!-- Fancybox for "dhatry" gallery -->
+                    <a href="./img/cineplanet.jpg" data-fancybox="dhatry" data-caption="Dhatry Image 6"></a>
                 </div>
             </div>
-          
+
+
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script>
         $('[data-fancybox="gallery"]').fancybox({
             buttons: [
@@ -307,7 +348,7 @@
             loop: false,
             protect: true
         });
-    </script>
+    </script> -->
 
 
     <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
@@ -634,9 +675,7 @@
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
+
             ]
         });
     </script>
@@ -662,6 +701,55 @@
     </script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Fancybox Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+        // Show only relevant cards based on tab selection
+        function showTab(category) {
+            const allCards = document.querySelectorAll('.card');
+            const tabs = document.querySelectorAll('.tab');
+
+            // Filter cards based on category
+            allCards.forEach((card) => {
+                card.classList.add('hidden');
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.classList.remove('hidden');
+
+                    // Update the Fancybox group dynamically
+                    const links = card.querySelectorAll('[data-fancybox]');
+                    links.forEach((link) => {
+                        link.setAttribute('data-fancybox', category); // Update group to match current category
+                    });
+                }
+            });
+
+            // Update active tab styling
+            tabs.forEach((tab) => tab.classList.remove('tab-active'));
+            const activeTab = Array.from(tabs).find((tab) => tab.dataset.category === category);
+            if (activeTab) {
+                activeTab.classList.add('tab-active');
+            }
+        }
+
+        // Initialize Fancybox
+        Fancybox.bind('[data-fancybox]', {
+            loop: false,
+            buttons: ["slideShow", "thumbs", "zoom", "fullScreen", "share", "close"],
+        });
+
+        // Set default tab to 'all' and bind events
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('all'); // Show all images initially
+            const allProjectsTab = document.querySelector('[data-category="all"]');
+            if (allProjectsTab) {
+                allProjectsTab.classList.add('tab-active'); // Set "All Projects" as the default active tab
+            }
+        });
+    </script>
+
+
+
 </body>
 
 </html>

@@ -105,16 +105,16 @@
             <div class="nav hidden md:block">
                 <div class="nav2">
                     <ul class="flex justify-between items-center gap-10">
-                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
-                        <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
+                        <li><a href="index.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">About Us</a></li>
                         <!-- Dropdown for Projects -->
                         <li class="relative group">
-                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center">
+                            <a href="#" class="hover:text-[#e7c873] font-semibold flex items-center md:text-[17px]">
                                 Projects
                                 <i class="fa-solid fa-angle-down ml-2 mt-1 text-[14px]"></i>
                             </a>
                             <ul
-                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block">
+                                class="absolute -left-4 pt-4 hidden w-[160px] bg-white shadow-md rounded-md group-hover:block z-56">
                                 <li>
                                     <a href="projects.html" class="block px-4 py-2 hover:bg-[#e7c873] hover:text-white">
                                         All Projects
@@ -140,8 +140,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
-                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
+                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Gallery</a></li> 
+                        <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold md:text-[17px]">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -150,7 +150,49 @@
 
     <section>
         <div class="main-banner">
-            <img src="./img/banner-slider-1.jfif" class="w-full" alt="">
+            <!-- <img src="./img/banner-slider-1.jfif" class="w-full" alt=""> -->
+            <div class="swiper-slide w-full">
+                <div class="relative w-full">
+                    <img class="w-[100%]" src="./img/S2.png" class="laptop-show" alt="">
+                    <!-- <img src="./img/S2-M.png" class="mobile-show" alt=""> -->
+                    <div class="absolute top-0 left-0  w-full h-full bg-[black] opacity-50"></div>
+                    <div class="absolute top-5     right-10">
+                        <div class="flex gap-10 items-center">
+                            <div class="md:w-[250px] w-[70px]" data-aos="fade-down" data-aos-duration="1000">
+                                <img src="./img/KSM-logo-PNG.png" class="w-full" alt="">
+                            </div>
+
+                            <div class="md:w-[160px] w-[50px] mx-auto" data-aos="fade-down" data-aos-duration="1000">
+                                <img src="./img/ghmclogo.png" class="w-full" alt="">
+
+                            </div>
+                        </div>
+
+                        <P class="text-[white] font-bold md:text-[14px] text-[10px] py-2 text-right">TLP No:
+                            002298/GHMC/1140/LBN1/20223-LO</P>
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="py-10 absolute  bottom-24 left-20 text-left" data-aos="fade-right"
+                        data-aos-duration="1000">
+                        <h1 class=" text-[white] font-bold md:text-5xl text-[16px]">Book Your Plot Near To</h1>
+                        <h1 class="text-[white] font-bold md:text-7xl text-[18px] py-2">EveryWhere</h1>
+                        <h3 class="text-[white] font-bold md:text-3xl text-[12px] py-2 ">#Buywithincity</h3>
+
+                        <p class="text-[white] font-bold md:text-xl text-[10px] w-[60%]">
+                            GHMC Approved, Ready to construct Villa Plot @ Vanastalipuram, LB Nager
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -177,9 +219,9 @@
 
         <div class="custom-container">
             <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
-                <div class="md:w-[42%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[46%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
                     <div class="">
-                        <img src="./img/ksm.jpeg" alt="">
+                        <img class="md:h-[600px] w-full mt-4" src="./img/ksm.jpeg" alt="">
                     </div>
 
                     <div
@@ -320,7 +362,7 @@
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/rapid_development.webp" alt="">
                     </div>
-                    <div class="w-[48%] ">
+                    <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/villaplots.avif" alt="">
                     </div>
                 </div>
@@ -328,7 +370,7 @@
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/metrorail.jpg" alt="">
                     </div>
-                    <div class="w-[48%] ">
+                    <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/BUS1.jpg" alt="">
                     </div>
                 </div>
@@ -342,33 +384,7 @@
         </div>
     </section>
 
-    <div class="horizontalSwiperParent py-12">
-        <h2 class="text-[#242365] text-4xl text-center font-bold pt-0 py-5">GALLERY</h2> <br>
-        <swiper-container class="customSwiper" pagination="true" loop="true">
-            <swiper-slide class="pb-10">
-                <img src="./img/Ramoji-City.jpeg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/metrorail.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/nehru_orr.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/highway-min_11zon (1).jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/nehru_orr.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/villaplots.avif" alt="">
-            </swiper-slide>
-            <swiper-slide class="pb-10">
-                <img src="./img/avenueplantation.jpg" alt="">
-            </swiper-slide>
-          
-        </swiper-container>
-    </div>
+
 
 
 
@@ -482,7 +498,33 @@
     </section>
 
 
-
+    <div class="horizontalSwiperParent pt-12">
+        <h2 class="text-[#242365] text-4xl text-center font-bold pt-0 py-5">GALLERY</h2> <br>
+        <swiper-container class="customSwiper" pagination="true" loop="true">
+            <swiper-slide class="pb-10">
+                <img src="./img/Ramoji-City.jpeg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/metrorail.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/nehru_orr.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/highway-min_11zon (1).jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/nehru_orr.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/villaplots.avif" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/avenueplantation.jpg" alt="">
+            </swiper-slide>
+          
+        </swiper-container>
+    </div>
 
     <!-- contact us map -->
 
@@ -495,7 +537,7 @@
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/Ramoji-City.jpeg" alt="">
                     </div>
-                    <div class="w-[48%] ">
+                    <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage w-full" src="./img/highway-min_11zon (1).jpg" alt="">
                     </div>
                 </div>
@@ -503,7 +545,7 @@
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/metrorail.jpg" alt="">
                     </div>
-                    <div class="w-[48%] ">
+                    <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/nehru_orr.jpg" alt="">
                     </div>
                 </div>
