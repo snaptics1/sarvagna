@@ -15,22 +15,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-      
-
-
-        .container {
-            max-width: 80rem;
-            width: 100%;
-            padding: 4rem 2rem;
-            margin: 0 auto;
-        }
-
-        .main .container {
+        .main .custom-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 1rem;
             justify-content: center;
             align-items: center;
+            margin-block: 50px;
+
         }
 
         .card {
@@ -58,12 +50,36 @@
             object-fit: cover;
         }
 
+        .image-gallery-banner {
+            background-color: #343434;
+            /* Blue background for the banner */
+            color: #ffffff;
+            /* White text */
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-gallery-heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
         @media only screen and (max-width: 600px) {
-            .main .container {
+            .main .custom-container {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 1rem;
             }
+            .image-gallery-heading {
+            font-size: 1.5rem;
+        }
         }
     </style>
 </head>
@@ -89,6 +105,11 @@
                     Projects</a>
             </li>
             <li class="shadow-xl w-full ">
+                <a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Gallery</a>
+            </li>
+            <li class="shadow-xl w-full ">
                 <a href="contact.html" class="hover:text-[#e7c873] font-semibold">
                     <i class="fa-solid fa-angle-right"></i>
                     Contact Us</a>
@@ -110,7 +131,7 @@
 
             <div class="nav hidden md:block">
                 <div class="nav2">
-                    <ul class="flex justify-between items-center gap-20">
+                    <ul class="flex justify-between items-center gap-10">
                         <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
                         <!-- Dropdown for Projects -->
@@ -146,75 +167,77 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#" class="hover:text-[#e7c873] font-semibold">Gallery</a></li> -->
+                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
                         <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
+    <div class="image-gallery-banner">
+        <h1 class="image-gallery-heading">Explore Our Gallery</h1>
+    </div>
     <main class="main">
-        <div class="container">
+        <div class="custom-container">
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg"
+                    <a href="./img/DHATRY 1.png"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg"
+                        <img src="./img/DHATRY 1.png"
                             alt="Image Gallery">
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg"
+                    <a href="./img/DHATRY 2.jpg"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg"
+                        <img src="./img/DHATRY 2.jpg"
                             alt="Image Gallery">
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg"
+                    <a href="./img/DHATRY 3.png"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg"
+                        <img src="./img/DHATRY 3.png"
                             alt="Image Gallery">
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg"
+                    <a href="./img/ksm.jpeg"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg"
+                        <img src="./img/ksm.jpeg"
                             alt="Image Gallery">
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg"
+                    <a href="./img/mnd.jpeg"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg"
+                        <img src="./img/mnd.jpeg"
                             alt="Image Gallery">
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg"
+                    <a href="./img/ksm-main-img.jpeg"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg"
+                        <img src="./img/ksm-main-img.jpeg"
                             alt="Image Gallery">
                     </a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <a href="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg"
+                    <a href="./img/KSM-bg.png"
                         data-fancybox="gallery" data-caption="Caption Images 1">
-                        <img src="https://cdn.pixabay.com/photo/2022/11/13/18/09/canyon-7589820_1280.jpg"
+                        <img src="./img/KSM-bg.png"
                             alt="Image Gallery">
                     </a>
                 </div>
@@ -255,10 +278,7 @@
             protect: true
         });
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
-
-    <!-- footer -->
 
     <footer class=" bg-[#211F1C] divide-y  dark:text-gray-800 relative">
         <div class="absolute top-0 right-0 w-[100px] h-[100px]">
@@ -444,6 +464,7 @@
             <div class="md:w-[40%] footer-line1"></div>
         </div>
     </footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -453,7 +474,164 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".testimonialSwiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".custom-button-next",
+                prevEl: ".custom-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
 
+        var swiper = new Swiper(".heroSwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            easing: 'ease-in-out', // Easing effect
+            once: true, // Animation happens once when scrolled into view
+        });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        const targets = [
+            { element: document.getElementById('starsCount'), count: 500, suffix: '+' },
+
+            { element: document.getElementById('sponsorsCount'), count: 95, suffix: '%' },
+            { element: document.getElementById('sponsorsCount2'), count: 10000, suffix: '+' },
+            { element: document.getElementById('sponsorsCount3'), count: 30, suffix: '+' }
+        ];
+
+        // Find the maximum count among all targets
+        const maxCount = Math.max(...targets.map(target => target.count));
+
+        // Function to animate count-up effect
+        function animateCountUp(target, duration) {
+            let currentCount = 0;
+            const effectiveDuration = Math.max(duration, 2000); // At least 2 seconds
+            const increment = Math.ceil(target.count / (duration / 50));
+
+            const interval = setInterval(() => {
+                currentCount += increment;
+                if (currentCount >= target.count) {
+                    clearInterval(interval);
+                    currentCount = target.count;
+                    target.element.textContent = currentCount + target.suffix;
+                } else {
+                    target.element.textContent = currentCount;
+                }
+            }, 50);
+        }
+
+        // Animate count-up for each target with adjusted duration
+        targets.forEach(target => {
+            const adjustedDuration = (target.count / maxCount) * 2000;
+            animateCountUp(target, adjustedDuration); // Adjust duration based on max count
+        });
+
+    </script>
+
+    <script>
+        $('.row').slick({
+            autoplay: true,
+            arrows: true,
+            dots: false,
+            infinite: true,
+            speed: 2000,
+            autoplaySpeed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        autoplaySpeed: 1000,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementsByClassName("barside")[0].classList.toggle("barside1");
+        }
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on('load', function () {
+                $('.loder').fadeOut('slow');
+            })
+
+        });
+
+
+
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 
 </html>

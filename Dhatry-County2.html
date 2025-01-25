@@ -21,13 +21,34 @@
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            height: 350px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
             display: block;
             width: 100%;
             height: 100%;
@@ -59,6 +80,11 @@
                     Projects</a>
             </li>
             <li class="shadow-xl w-full ">
+                <a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Gallery</a>
+            </li>
+            <li class="shadow-xl w-full ">
                 <a href="contact.html" class="hover:text-[#e7c873] font-semibold">
                     <i class="fa-solid fa-angle-right"></i>
                     Contact Us</a>
@@ -78,7 +104,7 @@
 
             <div class="nav hidden md:block">
                 <div class="nav2">
-                    <ul class="flex justify-between items-center gap-20">
+                    <ul class="flex justify-between items-center gap-10">
                         <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
                         <!-- Dropdown for Projects -->
@@ -114,7 +140,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#" class="hover:text-[#e7c873] font-semibold">Gallery</a></li> -->
+                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
                         <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
                     </ul>
                 </div>
@@ -125,7 +151,8 @@
     <section class="relative">
         <div class="main-banner relative">
             <img style="height: 85vh;" src="./img/DHATRY 1.png" class="w-full object-cover" alt="Banner Image">
-            <div class="py-10 absolute bottom-48 left-8 md:left-20 text-left" data-aos="fade-right" data-aos-duration="1000">
+            <div class="py-10 absolute top-8 left-8 md:left-20 text-left" data-aos="fade-right"
+                data-aos-duration="1000">
                 <h1 class="text-white font-bold text-[16px] md:text-4xl">Welcome to Dhatry</h1>
                 <h1 class="text-white font-bold text-[18px] md:text-6xl py-2">Exclusive Living Spaces</h1>
                 <!-- <p class="text-white text-[14px] md:text-lg mt-4 w-[90%] md:w-[60%]">
@@ -134,7 +161,7 @@
             </div>
         </div>
     </section>
-    
+
 
 
 
@@ -159,21 +186,21 @@
 
         <div class="custom-container">
             <div class="flex justify-between items-center py-32 md:flex-nowrap flex-wrap">
-                <div class="md:w-[60%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[50%] w-full relative " data-aos="fade-up" data-aos-duration="1000">
                     <div class="dhatriplanImage">
-                        <img src="./img/DHATRY 2.jpg" alt="">
+                        <img src="./img/dhatribelowimages.jpg" alt="">
                     </div>
 
                     <div
-                        class="absolute -top-8 md:-left-8 md:w-[350px] w-[200px] md:h-[700px] h-[200px]  -z-10 p-1 rounded-full">
+                        class="absolute -top-8 md:-left-8 md:w-[350px] w-[200px] md:h-[600px] h-[200px]  -z-10 p-1 rounded-full">
                         <img src="./img/project-overview-img-1.png" class="w-full h-full object-cover" alt="">
 
                     </div>
 
                 </div>
-                <div class="md:w-[40%] w-full" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[50%] w-full" data-aos="fade-up" data-aos-duration="1000">
                     <div class="md:text-left px-10 py-5 md:py-0">
-                        <h1 class="text-[#242365] text-4xl font-bold py-5">Grand Welcome to Dhatri County  </h1> <br>
+                        <h1 class="text-[#242365] text-4xl font-bold py-5">Grand Welcome to Dhatri County </h1> <br>
                         <!-- <p>Sarvagna Projects was founded by remarkable individuals driven by a commitment to service excellence.
                             In a rapidly evolving world, the property industry is becoming increasingly complex, and the urgency for sustainable development has
                             never been greater. At Sarvagna, our entrepreneurial spirit fuels our mission to create communities that address these challenges. We
@@ -184,14 +211,19 @@
                             We continuously evolve to provide a superior housing experience for generations to come. Become part of the Sarvagna family,
                             because there’s nothing more promising than a future we build together.
                             </p>  -->
-                        
-                            <p>Discover a life of natural luxury at Dhatri County, a sprawling 18-acre green haven conveniently located near the Medchal Highway,
-                                close to Kompally. Nestled in a tranquil setting, Dhatri County offers the perfect blend of peace and opportunity, making it an excellent
-                                choice for a rewarding investment.</p> <br>
-                                <p>Enjoy the promise of exceptional returns while immersing yourself in serene surroundings and thoughtfully integrated amenities. With
-                                    just a 5-minute drive to the Outer Ring Road junction, seamless connectivity to the city is always within reach, ensuring unmatched
-                                    convenience. At Dhatri County, you’re not just buying a plot; you’re embracing a complete lifestyle.</p>
-                  
+
+                        <p>Discover a life of natural luxury at Dhatri County, a sprawling 18-acre green haven
+                            conveniently located near the Medchal Highway,
+                            close to Kompally. Nestled in a tranquil setting, Dhatri County offers the perfect blend of
+                            peace and opportunity, making it an excellent
+                            choice for a rewarding investment.</p> <br>
+                        <p>Enjoy the promise of exceptional returns while immersing yourself in serene surroundings and
+                            thoughtfully integrated amenities. With
+                            just a 5-minute drive to the Outer Ring Road junction, seamless connectivity to the city is
+                            always within reach, ensuring unmatched
+                            convenience. At Dhatri County, you’re not just buying a plot; you’re embracing a complete
+                            lifestyle.</p>
+
 
                         <div class="pt-8">
                             <!-- <button class="nav-button bg-[#e7c873] py-3 px-5 text-white">
@@ -310,12 +342,13 @@
 
                 </div>
 
-                <div class="md:w-[50%] w-full relative projectHeighlightsImages" data-aos="fade-up" data-aos-duration="1000">
+                <div class="md:w-[50%] w-full relative projectHeighlightsImages" data-aos="fade-up"
+                    data-aos-duration="1000">
                     <div class="flex justify-between mb-4">
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/nehru_orr.jpg" alt="">
                         </div>
-                        <div class="w-[48%] secondimage">
+                        <div class="w-[48%] ">
                             <img class="secondimage" src="./img/mmts.jpg" alt="">
                         </div>
                     </div>
@@ -323,7 +356,7 @@
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/metrorail.jpg" alt="">
                         </div>
-                        <div class="w-[48%] secondimage">
+                        <div class="w-[48%] ">
                             <img class="secondimage" src="./img/gatedcommunity.jpeg" alt="">
                         </div>
                     </div>
@@ -333,6 +366,51 @@
         </div>
     </section>
 
+
+    <div class="horizontalSwiperParent py-12">
+        <h2 class="text-[#242365] text-4xl text-center font-bold pt-0 py-5">GALLERY</h2> <br>
+        <swiper-container class="customSwiper" pagination="true" loop="true">
+            <swiper-slide class="pb-10">
+                <img src="./img/dhatryGallary1.avif" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/DHATRY 1.png" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/nehru_orr.jpg" alt="">
+            </swiper-slide>
+
+            <swiper-slide class="pb-10">
+                <img src="./img/dhatryGallary2.avif" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/gatedcommunity.jpeg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/metrorail.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/DHATRY 3.png" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/cmrcollege.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/mmts.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/cineplanet.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/School-Building.webp" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/dhatribelowimages.jpg" alt="">
+            </swiper-slide>
+
+
+        </swiper-container>
+    </div>
 
 
 
@@ -355,15 +433,6 @@
                     <p class="text-[#0f1e5a] font-semibold ">24x7 security</p>
                 </div>
 
-                <!-- <div class="md:w-[17%] w-[45%]  bg-[#E7C873] h-[170px]  py-5 text-center rounded-lg" data-aos="fade-up"
-                    data-aos-duration="1000">
-
-                    <div class="text-center py-5">
-                        <img src="./img/Vastu.png" class="mx-auto" alt="">
-                    </div>
-                    <p class="text-[#0f1e5a] font-semibold ">Jogging Track</p>
-                </div> -->
-
 
                 <div class="md:w-[17%] w-[45%]  bg-[#E7C873] h-[170px]  py-5 text-center rounded-lg" data-aos="fade-up"
                     data-aos-duration="1000">
@@ -381,38 +450,10 @@
                         <img style="height: 44px;width: 44px;" src="./img/clubhouse.png" class="mx-auto" alt="">
                     </div>
                     <p class="text-[#0f1e5a] font-semibold ">Club House
-                        </p>
+                    </p>
                 </div>
 
-                <!-- <div class="md:w-[17%] w-[45%]  bg-[#E7C873] h-[170px]  py-5 text-center rounded-lg" data-aos="fade-up"
-                    data-aos-duration="1000">
 
-                    <div class="text-center py-5">
-                        <img src="./img/Exclusive.png" class="mx-auto" alt="">
-                    </div>
-                    <p class="text-[#0f1e5a] font-semibold ">Yoga Area
-                    </p>
-                </div> -->
-
-                <!-- <div class="md:w-[17%] w-[45%]  bg-[#E7C873] h-[170px]  py-5 text-center rounded-lg" data-aos="fade-up"
-                    data-aos-duration="1000">
-
-                    <div class="text-center py-5">
-                        <img src="./img/Parks.png" class="mx-auto" alt="">
-                    </div>
-                    <p class="text-[#0f1e5a] font-semibold ">Children’s Play Area (Tot Lot)</p>
-                </div> -->
-
-
-                <!-- <div class="md:w-[17%] w-[45%]  bg-[#E7C873] h-[170px]  py-5 text-center rounded-lg" data-aos="fade-up"
-                    data-aos-duration="1000">
-
-                    <div class="text-center py-5">
-                        <img src="./img/Designer.png" class="mx-auto" alt="">
-                    </div>
-                    <p class="text-[#0f1e5a] font-semibold ">Street Lighting
-                    </p>
-                </div> -->
                 <div class="md:w-[17%] w-[45%]  bg-[#E7C873] h-[170px]  py-5 text-center rounded-lg" data-aos="fade-up"
                     data-aos-duration="1000">
 
@@ -466,9 +507,9 @@
                     data-aos-duration="1000">
                     <div class="flex justify-between  mb-5">
                         <div class="md:w-[48%] sm:w-[48%]">
-                            <img class="secondimage"  src="./img/mmts.jpg" alt="">
+                            <img class="secondimage" src="./img/mmts.jpg" alt="">
                         </div>
-                        <div class="w-[48%] secondimage">
+                        <div class="w-[48%] ">
                             <img class="secondimage" src="./img/School-Building.webp" alt="">
                         </div>
                     </div>
@@ -476,42 +517,43 @@
                         <div class="md:w-[48%] sm:w-[48%]">
                             <img class="secondimage" src="./img/cineplanet.jpg" alt="">
                         </div>
-                        <div class="w-[48%] secondimage">
+                        <div class="w-[48%] ">
                             <img class="secondimage" src="./img/cmrcollege.jpg" alt="">
                         </div>
                     </div>
                 </div>
-    
-                <div class="md:w-[45%] w-full px-5 space-y-5   flex-wrap gap-5" data-aos="fade-up" data-aos-duration="1000">
+
+                <div class="md:w-[45%] w-full px-5 space-y-5   flex-wrap gap-5" data-aos="fade-up"
+                    data-aos-duration="1000">
                     <p class="w-[90%] text-[#7D325B] text-4xl font-bold  ">Nearby Locations </p>
-    
+
                     <ul class="space-y-5">
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Near to Medchal Road (NH-44) 
-    
-    
+                            Near to Medchal Road (NH-44)
+
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Outer Ring Road 
-    
+                            Outer Ring Road
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Dundigal IT Park 
-    
-    
+                            Dundigal IT Park
+
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
                             MMTS Station- Medchal
-    
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            MLR Eng. Colleges 
-    
+                            MLR Eng. Colleges
+
                         </li>
                         <!-- <li>
                             <i class="fa-solid fa-location-dot"></i>
@@ -520,25 +562,25 @@
                         </li> -->
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                             St. Ann's School
-    
+                            St. Ann's School
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            DRS International School 
-    
+                            DRS International School
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Siva Sivani Public School 
-    
-    
+                            Siva Sivani Public School
+
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            CMR Engg. College 
-    
-    
+                            CMR Engg. College
+
+
                         </li>
                         <!-- <li>
                             <i class="fa-solid fa-location-dot"></i>
@@ -552,21 +594,21 @@
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Run way - 9 Apparel Park (Chermas) 
-    
+                            Run way - 9 Apparel Park (Chermas)
+
                         </li>
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            Cine Planet multiplex 
-    
+                            Cine Planet multiplex
+
                         </li>
-    
+
                     </ul>
-    
-    
+
+
                 </div>
             </div>
-    
+
         </section>
     </div>
 
@@ -578,9 +620,9 @@
 
                 <div class="md:w-[50%] w-full space-y-5" data-aos="fade-up" data-aos-duration="1000">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3802.3930208888855!2d78.43034407517055!3d17.631535083297923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDM3JzUzLjUiTiA3OMKwMjUnNTguNSJF!5e0!3m2!1sen!2sin!4v1737525848453!5m2!1sen!2sin"
-                    width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3802.3930208888855!2d78.43034407517055!3d17.631535083297923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDM3JzUzLjUiTiA3OMKwMjUnNTguNSJF!5e0!3m2!1sen!2sin!4v1737525848453!5m2!1sen!2sin"
+                        width="100%" height="470" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
 
@@ -860,11 +902,11 @@
             loop: true,
             slidesPerView: 1,
             spaceBetween: 30,
-            // centeredSlides: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },            
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -897,6 +939,40 @@
 
 
     </script>
+    <script>
+        const customSwiper = document.querySelector('.customSwiper');
+        Object.assign(customSwiper, {
+            slidesPerView: 1, // Default slides per view
+            spaceBetween: 10, // Default space between slides
+            loop: true, // Enable looping
+            autoplay: {
+                delay: 2500, // Delay in ms for autoplay
+                disableOnInteraction: false, // Autoplay remains active on interaction
+            },
+            pagination: {
+                clickable: true, // Allow clicking on pagination dots
+            },
+            breakpoints: {
+                // Responsive breakpoints
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        customSwiper.initialize();
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
 
 </html>

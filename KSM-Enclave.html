@@ -33,6 +33,27 @@
             height: 100%;
             object-fit: cover;
         }
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            height: 350px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 
 </head>
@@ -59,6 +80,11 @@
                     Projects</a>
             </li>
             <li class="shadow-xl w-full ">
+                <a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Gallery</a>
+            </li>
+            <li class="shadow-xl w-full ">
                 <a href="contact.html" class="hover:text-[#e7c873] font-semibold">
                     <i class="fa-solid fa-angle-right"></i>
                     Contact Us</a>
@@ -78,7 +104,7 @@
 
             <div class="nav hidden md:block">
                 <div class="nav2">
-                    <ul class="flex justify-between items-center gap-20">
+                    <ul class="flex justify-between items-center gap-10">
                         <li><a href="index.html" class="hover:text-[#e7c873] font-semibold">Home</a></li>
                         <li><a href="about.html" class="hover:text-[#e7c873] font-semibold">About Us</a></li>
                         <!-- Dropdown for Projects -->
@@ -114,7 +140,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#" class="hover:text-[#e7c873] font-semibold">Gallery</a></li> -->
+                        <li><a href="Gallery.html" class="hover:text-[#e7c873] font-semibold">Gallery</a></li>
                         <li><a href="contact.html" class="hover:text-[#e7c873] font-semibold">Contact Us</a></li>
                     </ul>
                 </div>
@@ -294,15 +320,15 @@
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/rapid_development.webp" alt="">
                     </div>
-                    <div class="w-[48%] secondimage">
-                        <img class="secondimage" src="./img/villaplots.jpg" alt="">
+                    <div class="w-[48%] ">
+                        <img class="secondimage" src="./img/villaplots.avif" alt="">
                     </div>
                 </div>
                 <div class="flex justify-between ">
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/metrorail.jpg" alt="">
                     </div>
-                    <div class="w-[48%] secondimage">
+                    <div class="w-[48%] ">
                         <img class="secondimage" src="./img/BUS1.jpg" alt="">
                     </div>
                 </div>
@@ -316,6 +342,33 @@
         </div>
     </section>
 
+    <div class="horizontalSwiperParent py-12">
+        <h2 class="text-[#242365] text-4xl text-center font-bold pt-0 py-5">GALLERY</h2> <br>
+        <swiper-container class="customSwiper" pagination="true" loop="true">
+            <swiper-slide class="pb-10">
+                <img src="./img/Ramoji-City.jpeg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/metrorail.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/nehru_orr.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/highway-min_11zon (1).jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/nehru_orr.jpg" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/villaplots.avif" alt="">
+            </swiper-slide>
+            <swiper-slide class="pb-10">
+                <img src="./img/avenueplantation.jpg" alt="">
+            </swiper-slide>
+          
+        </swiper-container>
+    </div>
 
 
 
@@ -440,9 +493,9 @@
                 data-aos-duration="1000">
                 <div class="flex justify-between  mb-5">
                     <div class="md:w-[48%] sm:w-[48%]">
-                        <img class="secondimage" src="https://www.digitalstudioindia.com/cloud/2024/03/13/Ramoji-City.jpeg" alt="">
+                        <img class="secondimage" src="./img/Ramoji-City.jpeg" alt="">
                     </div>
-                    <div class="w-[48%] secondimage">
+                    <div class="w-[48%] ">
                         <img class="secondimage w-full" src="./img/highway-min_11zon (1).jpg" alt="">
                     </div>
                 </div>
@@ -450,7 +503,7 @@
                     <div class="md:w-[48%] sm:w-[48%]">
                         <img class="secondimage" src="./img/metrorail.jpg" alt="">
                     </div>
-                    <div class="w-[48%] secondimage">
+                    <div class="w-[48%] ">
                         <img class="secondimage" src="./img/nehru_orr.jpg" alt="">
                     </div>
                 </div>
@@ -897,6 +950,39 @@
 
 
     </script>
+        <script>
+            const customSwiper = document.querySelector('.customSwiper');
+            Object.assign(customSwiper, {
+                slidesPerView: 1, // Default slides per view
+                spaceBetween: 10, // Default space between slides
+                loop: true, // Enable looping
+                autoplay: {
+                    delay: 2500, // Delay in ms for autoplay
+                    disableOnInteraction: false, // Autoplay remains active on interaction
+                },
+                pagination: {
+                    clickable: true, // Allow clicking on pagination dots
+                },
+                breakpoints: {
+                    // Responsive breakpoints
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+            customSwiper.initialize();
+    
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>
