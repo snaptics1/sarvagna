@@ -716,21 +716,25 @@
         function showTab(category) {
             const allCards = document.querySelectorAll('.card');
             const tabs = document.querySelectorAll('.tab');
-
+    
+            // Reset Fancybox groups
+            const allLinks = document.querySelectorAll('[data-fancybox]');
+            allLinks.forEach((link) => link.removeAttribute('data-fancybox'));
+    
             // Filter cards based on category
             allCards.forEach((card) => {
                 card.classList.add('hidden');
                 if (category === 'all' || card.classList.contains(category)) {
                     card.classList.remove('hidden');
-
-                    // Update the Fancybox group dynamically
-                    const links = card.querySelectorAll('[data-fancybox]');
-                    links.forEach((link) => {
-                        link.setAttribute('data-fancybox', category); // Update group to match current category
+    
+                    // Update the Fancybox group dynamically for visible cards
+                    const uniqueLinks = card.querySelectorAll('a:first-of-type'); // Only assign to the first <a> tag per card
+                    uniqueLinks.forEach((link) => {
+                        link.setAttribute('data-fancybox', category); // Assign to current category
                     });
                 }
             });
-
+    
             // Update active tab styling
             tabs.forEach((tab) => tab.classList.remove('tab-active'));
             const activeTab = Array.from(tabs).find((tab) => tab.dataset.category === category);
@@ -738,13 +742,13 @@
                 activeTab.classList.add('tab-active');
             }
         }
-
+    
         // Initialize Fancybox
         Fancybox.bind('[data-fancybox]', {
             loop: false,
             buttons: ["slideShow", "thumbs", "zoom", "fullScreen", "share", "close"],
         });
-
+    
         // Set default tab to 'all' and bind events
         document.addEventListener('DOMContentLoaded', () => {
             showTab('all'); // Show all images initially
@@ -754,6 +758,8 @@
             }
         });
     </script>
+    
+    
 
 
 
