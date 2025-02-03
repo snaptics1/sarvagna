@@ -294,20 +294,34 @@ body {
   object-fit: cover;
   width: 100%;
 }
-.secondimage{
+.secondimage {
   width: 100%;
 }
-.nav li a{
+.nav li a {
   padding: 10px 20px;
   transition: all 0.3s ease;
   border-radius: 30px;
 }
-.nav li a:hover{
+.nav li a:hover {
   background: #242365;
   border-radius: 30px;
-
 }
 @media screen and (max-width: 767px) {
+  .swiperSLideKsm {
+    height: 100%;
+  }
+  .md\:w-\[40\%\].footer-line1.flex.justify-center.items-center {
+    width: fit-content;
+    font-size: 14px;
+}
+.md\:w-\[40\%\].footer-line1.flex.justify-center.items-center {
+  width: fit-content;
+  font-size: 14px;
+  text-align: center;
+}
+  .flex.justify-between.items-center.flex-wrap.gap-10.md\:flex-nowrap {
+    flex-direction: column-reverse;
+  }
   .dhatriplanImage img {
     height: 100%;
   }
@@ -321,7 +335,7 @@ body {
 }
 
 @media screen and (max-width: 575px) {
-  .swiper-slide{
+  .swiper-slide {
     width: 100% !important;
   }
   .projectHeighlightsImages .flex.justify-between {
