@@ -306,6 +306,10 @@ body {
   background: #242365;
   border-radius: 30px;
 }
+.group:hover .group-hover\:block {
+  display: block;
+  padding: 10px;
+}
 @media screen and (max-width: 767px) {
   .swiperSLideKsm {
     height: 100%;
